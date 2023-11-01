@@ -49,10 +49,28 @@ const render = async (data) => {
 <h2>Biography</h2>
 <div style="margin: 1.5rem 0px">${ rdrblock(person.biography) }</div>`;
 
+        // add Kraus Operators
+        if (person.kraus_operators != null) {
+            s += sqzhtml`
+        <h3>Kraus Operators</h3>
+        <div>${ rdrblock(person.kraus_operators) }</div>`;
+        }
+
+        // add isometry
+        if (person.isometry != null) {
+            s += sqzhtml`
+        <h3>Isometry</h3>
+        <div>${ rdrblock(person.isometry) }</div>`;
+        }
+
+
         const relations = person.relations ?? {};
 
         if (relations.spouse != null) {
             s += sqzhtml`
+
+
+
 <h2>Spouse</h2>
 <p>${ ref('person', relations.spouse) }</p>`;
         }
@@ -108,6 +126,8 @@ const render = async (data) => {
         }
 
         s += sqzhtml`
+
+
 <RENDER_ENDNOTES/>
 
 <p class="last-edit">Last modified: ${ data.page.date.toString() }</p>

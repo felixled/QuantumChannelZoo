@@ -2,7 +2,7 @@ $schema: "http://json-schema.org/draft-06/schema"
 
 type: object
 additionalProperties: false
-required: ['person_id', 'name', 'biography', ]
+required: ['person_id', 'name', 'biography', 'kraus_operators', 'isometry', ]
 
 _zoo_primarykey: 'person_id'
 
@@ -53,6 +53,19 @@ properties:
     _flm: full
     _description: >-
       A short biography of this person.
+
+  kraus_operators:
+    type: string
+    _flm: full
+    _description: >-
+      Describe Kraus operators for the channel.
+
+  isometry:
+    type: string
+    _flm: full
+    _description: >-
+      Describe an isometry for the channel.
+
 
   #
   # Relations:
