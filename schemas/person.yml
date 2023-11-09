@@ -66,6 +66,13 @@ properties:
     _description: >-
       Describe an isometry for the channel.
 
+  choi_state:
+    type: string
+    _flm: full
+    _description: >-
+      Describe choi state for the channel.
+
+
 
   #
   # Relations:
