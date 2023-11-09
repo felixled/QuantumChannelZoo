@@ -1,0 +1,27 @@
+
+person_id: depolarizing
+
+name: 'Depolarizing Channel'
+
+biography: |
+  pg. 157, we know that the depolarizing channel is defined as 
+    \[ \mathcal{N}(\rho) = (1-q)\rho + q \tr(\rho)\frac{\mathbb{1}}{2} = (1-p)\rho + \frac{p}{3} X \rho X + \frac{p}{3} Y \rho Y + \frac{p}{3} Z \rho Z, \]
+  where \(p\in[0,1]\) and \(q=4p/3\).
+
+kraus_operators: | 
+  \begin{align*}
+      \begin{array}{cccc}
+        K_0 = \sqrt{1-p} \mathbb{1} & K_1 = \sqrt{\frac{p}{3}}X & K_2 = \sqrt{\frac{p}{3}}Y & K_3 = \sqrt{\frac{p}{3}}Z
+      \end{array}
+  \end{align*}
+
+isometry: |
+  \begin{align*}
+      V =
+      \begin{pmatrix} 
+        \sqrt{1-p} & 0 \\ 0 & \sqrt{\frac{p}{3}} \\ 0 & -i\sqrt{\frac{p}{3}} \\ \sqrt{\frac{p}{3}} & 0 \\ 0 & \sqrt{1-p} \\ \sqrt{\frac{p}{3}} & 0 \\ i\sqrt{\frac{p}{3}} & 0 \\ 0 & -\sqrt{\frac{p}{3}} 
+      \end{pmatrix}
+  \end{align*}
+
+
+

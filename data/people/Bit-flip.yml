@@ -1,0 +1,24 @@
+
+person_id: bit-flip
+
+name: 'Bit-flip Channel'
+
+biography: |
+  Through the Lecture Notes for Spring 2023 MATH 595 pg. 24, we know the bit-flip channel is defined as \[ \mathscr{F}_p^X : \rho \mapsto (1-p)\rho + pX\rho X \]
+
+kraus_operators: | 
+  \[ 
+    \begin{array}{cccc}
+      K_0 = \sqrt{1-p}\mathbb{1} & K_1 = \sqrt{p} X
+    \end{array}  
+  \]
+
+isometry: |
+  \[ 
+    V = \begin{pmatrix}
+    \sqrt{1-p} & 0 \\
+    0 & \sqrt{p} \\
+    0 & \sqrt{1-p} \\
+    \sqrt{p} & 0 \\
+    \end{pmatrix} 
+  \]

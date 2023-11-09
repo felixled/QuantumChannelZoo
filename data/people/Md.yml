@@ -1,0 +1,18 @@
+
+person_id: m_d
+
+name: \( \mathcal{M}_d\) Channel
+
+biography: |
+  From , we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
+
+kraus_operators: | 
+  \begin{align*}
+    K_i &= \frac{1}{\sqrt{d-1}} {|i\rangle}_B {\langle0|}_A + {|d-1\rangle}_B {\langle i+1|}_A \quad \text{for } i = 0, \dots, d-2
+  \end{align*}
+
+isometry: |
+  \begin{align*}
+    {|0 \rangle}_A &\rightarrow \frac{1}{\sqrt{d-1}} \sum_{j=0}^{d-2} {|j\rangle}_B \otimes {|j\rangle}_E\\
+    {|j \rangle}_A &\rightarrow {|d-1\rangle}_B \otimes {|j-1\rangle}_E \quad \text{for } j = 1, \dots, d-1 \\
+  \end{align*}

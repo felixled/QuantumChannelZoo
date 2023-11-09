@@ -1,0 +1,15 @@
+
+person_id: high_dim_depolar
+
+name: 'Higher-dimensioanl Depolarizing Channel'
+
+biography: |
+  For \(q\in[0,d^2/(d^2-1)]\) and \(\rho\in\cL(\mathbb{C}^d)\), \[\cD_{q,d}(\rho) = (1-q)\rho + \tr(\rho) \frac{1}{d} \one.\]
+  
+  See \url{https://en.wikipedia.org/wiki/Quantum_depolarizing_channel}.
+
+kraus_operators: |
+  pass
+
+isometry: |
+  pass

@@ -1,0 +1,33 @@
+
+person_id: pauli
+
+name: 'Pauli Channel'
+
+biography: |
+  Through the Lecture Notes for Spring 2023 MATH 595 pg. 24, we know the bit-flip channel is defined as \[ \mathscr{F}_p^X : \rho \mapsto (1-p)\rho + pX\rho X \]
+
+kraus_operators: | 
+  \begin{align*}
+      \begin{array}{cccc}
+        K_1 = \sqrt{P_1}I = \sqrt{P_1} \begin{pmatrix}  1 & 0 \\ 0 & 1\end{pmatrix} & 
+        K_2 = \sqrt{P_2}X = \sqrt{P_2} \begin{pmatrix}  0 & 1 \\ 1 & 0\end{pmatrix} &
+        K_3 = \sqrt{P_3}Y = \sqrt{P_2} \begin{pmatrix}  0 & -i \\ i & 0\end{pmatrix} &
+        K_4 = \sqrt{P_4}Z = \sqrt{P_2} \begin{pmatrix}  1 & 0 \\ 0 & -1\end{pmatrix}
+      \end{array}
+  \end{align*}
+
+isometry: |
+  Given Kraus operators: \( \lbrace K_i \rbrace_{r=1}^r\), \(V = \sum_{i=1} (K_i) \otimes |i\rangle\):
+
+  \[ 
+    V = \sum_{i=1}^4 (K_i)\otimes |i\rangle
+  \]
+  \[
+    V = \sqrt{P_1}I\otimes |1\rangle + \sqrt{P_2}X\otimes |2\rangle + \sqrt{P_3}Y\otimes |3\rangle + \sqrt{P_4}Z\otimes |4\rangle
+  \]
+  \[
+    V = \sqrt{P_1}\begin{pmatrix}  1 & 0 \\ 0 & 1\end{pmatrix}\otimes\begin{pmatrix}  1 \\ 0 \\ 0 \\ 0\end{pmatrix} + \sqrt{P_2} \begin{pmatrix}  0 & 1 \\ 1 & 0\end{pmatrix}\otimes  \begin{pmatrix}  0 \\ 1 \\ 0 \\ 0\end{pmatrix} + \sqrt{P_3}\begin{pmatrix}  0 & -i \\ i & 0\end{pmatrix}\otimes \begin{pmatrix}  0 \\ 0 \\ i \\ 0\end{pmatrix} + \sqrt{P_4}\begin{pmatrix}  1 & 0 \\ 0 & -1\end{pmatrix}\otimes \begin{pmatrix}  0 \\ 0 \\ 0 \\ 1\end{pmatrix}
+  \]
+  \[
+    V = \begin{pmatrix}  \sqrt{P_1} & 0 \\ 0 & \sqrt{P_2} \\ 0 & \sqrt{P_3} \\ \sqrt{P_4} & 0\\ 0 & \sqrt{P_1} \\ \sqrt{P_2} & 0 \\ \sqrt{P_3}i & 0\\ 0 & -\sqrt{P_4}\end{pmatrix}
+  \]

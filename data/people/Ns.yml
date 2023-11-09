@@ -1,0 +1,20 @@
+
+person_id: n_s
+
+name: \( \mathcal{N}_s\) Channel
+
+biography: |
+  From , we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
+
+kraus_operators: | 
+  \begin{align*}
+    K_0 &= \begin{pmatrix} \sqrt{s} & 0 & 0\\0 & 0 & 0\\0 & 1 & 0\end{pmatrix} &
+    K_1 &= \begin{pmatrix} 0 & 0 & 0\\\sqrt{1-s} & 0 & 0\\0 & 0 & 1\end{pmatrix}
+  \end{align*}  
+
+isometry: |
+  \begin{align*}
+    {|0 \rangle}_A &\rightarrow \sqrt{s} \  {|0\rangle}_B \otimes {|0\rangle}_E + \sqrt{1-s} \  {|1\rangle}_B \otimes {|1\rangle}_E &
+    {|1 \rangle}_A &\rightarrow {|2\rangle}_B \otimes {|0\rangle}_E &
+    {|2 \rangle}_A &\rightarrow {|2\rangle}_B \otimes {|1\rangle}_E &
+  \end{align*}

@@ -1,0 +1,13 @@
+
+person_id: dephrasure
+
+name: 'Dephrasure Channel'
+
+biography: |
+  From , We know its channel expression is \[N_{p,q}(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + qtr(\rho)|e\rangle \langle e|\] \[N_{p,q}(\rho) = (1-q)(1-p)\rho + (1-q)pZ\rho Z + qtr(\rho)|e\rangle \langle e|\]
+
+kraus_operators: |
+  pass
+
+isometry: |
+  pass

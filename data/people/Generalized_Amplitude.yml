@@ -1,0 +1,21 @@
+
+person_id: generalized_amplitude
+
+name: Generalized Amplitude Damping Channel
+
+biography: |
+  From, we have \(\mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^2\) and \(\mathcal{H}_E \cong \mathbb{C}^4\)
+
+kraus_operators: | 
+  \begin{align*}
+    K_0 &= \sqrt{1-N} \left(|0\rangle \langle 0| + \sqrt{1-\gamma} \ |1\rangle \langle 1| \right) &
+    K_1 &= \sqrt{\gamma(1-N)} \ |0\rangle \langle 1| &
+    K_2 &= \sqrt{N} \left(\sqrt{1-\gamma} \ |0\rangle \langle 0| + |1\rangle \langle 1| \right) &
+    K_3 &= \sqrt{\gamma N} \ |1\rangle \langle 0| 
+  \end{align*}
+
+isometry: |
+  \begin{align*}
+    {|0 \rangle}_A &\rightarrow \sqrt{1-N} \  {|0\rangle}_B \otimes {|0\rangle}_E + \sqrt{N(1-\gamma)} \  {|0\rangle}_B \otimes {|2\rangle}_E + \sqrt{\gamma N} \  {|1\rangle}_B \otimes {|3\rangle}_E &
+    {|1 \rangle}_A &\rightarrow \sqrt{1-\gamma} \  {|1\rangle}_B \otimes {|0\rangle}_E + \sqrt{\gamma(1-N)} \  {|0\rangle}_B \otimes {|1\rangle}_E + \sqrt{N} \  {|1\rangle}_B \otimes {|2\rangle}_E
+  \end{align*}

@@ -1,0 +1,18 @@
+
+person_id: o
+
+name: \( \mathcal{O}\) Channel
+
+biography: |
+  From , we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^d\) and \( \mathcal{H}_E \cong \mathbb{C}^{d-1}\). Let \( \mu_k \in \mathbb{C}\) with \( \sum_{k=0}^{d-2} | \mu_k |^2 = 1\).
+
+kraus_operators: | 
+  \begin{align*}
+    K_i &= \mu_i {|i\rangle}_B {\langle0|}_A + {|d-1\rangle}_B {\langle i+1|}_A \quad \text{for } i = 0, \dots, d-2
+  \end{align*}
+
+isometry: |
+  \begin{align*}
+    {|0 \rangle}_A &\rightarrow \sum_{j=0}^{d-2} \mu_j {|j\rangle}_B \otimes {|j\rangle}_E &
+    {|j \rangle}_A &\rightarrow {|d-1\rangle}_B \otimes {|j-1\rangle}_E \quad \text{for } j = 1, \dots, d-1 
+  \end{align*}
