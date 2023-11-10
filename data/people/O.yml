@@ -4,7 +4,7 @@ person_id: o
 name: \( \mathcal{O}\) Channel
 
 biography: |
-  From , we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^d\) and \( \mathcal{H}_E \cong \mathbb{C}^{d-1}\). Let \( \mu_k \in \mathbb{C}\) with \( \sum_{k=0}^{d-2} | \mu_k |^2 = 1\).
+  From~\cite{doi:10.1109/TIT.2023.3245985}, we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^d\) and \( \mathcal{H}_E \cong \mathbb{C}^{d-1}\). Let \( \mu_k \in \mathbb{C}\) with \( \sum_{k=0}^{d-2} | \mu_k |^2 = 1\).
 
 kraus_operators: | 
   \begin{align*}

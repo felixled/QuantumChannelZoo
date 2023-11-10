@@ -4,7 +4,7 @@ person_id: m_d
 name: \( \mathcal{M}_d\) Channel
 
 biography: |
-  From , we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
+  From~\cite{doi:10.1109/TIT.2023.3245985}, we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
 
 kraus_operators: | 
   \begin{align*}
