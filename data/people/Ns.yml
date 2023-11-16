@@ -1,7 +1,7 @@
 
-person_id: n_s
+person_id: platypus_n_s
 
-name: \( \mathcal{N}_s\) Channel
+name: Qutrit Platypus Channel
 
 biography: |
   From~\cite{doi:10.1109/TIT.2023.3245985}, we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
@@ -34,3 +34,7 @@ choi_state: |
     \cdot & \sqrt{1-s} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & 1 \\
   \end{pmatrix}
   \]
+
+relations:
+  parents:
+    - person_id: platypus_m_d
