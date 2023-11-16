@@ -13,6 +13,12 @@ kraus_operators: |
 
 isometry: |
   \begin{align*}
-    {|0 \rangle}_A &\rightarrow \sum_{j=0}^{d-2} \mu_j {|j\rangle}_B \otimes {|j\rangle}_E &
+    {|0 \rangle}_A &\rightarrow \sum_{j=0}^{d-2} \mu_j {|j\rangle}_B \otimes {|j\rangle}_E \\
     {|j \rangle}_A &\rightarrow {|d-1\rangle}_B \otimes {|j-1\rangle}_E \quad \text{for } j = 1, \dots, d-1 
   \end{align*}
+
+choi_state: |
+  \[
+  \tau = \sum_{j=0}^{d-2} \left({\mu_{j}}^2 [0j] + [j+1, d-1] + \mu_j (|0,j\rangle \langle j+1,d-1| + |j+1,d-1\rangle \langle 0,j|)\right)
+  \]
+  where \( [\psi] \equiv |\psi\rangle \langle\psi| \).
