@@ -3,8 +3,10 @@
 //
 
 html, body {
-    background-color: rgb(220,220,240);
+    background-color: rgb(204, 229, 255);
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
 }
 
 
@@ -29,6 +31,12 @@ footer {
 .last-edit {
     color: #aaa;
     font-style: italic;
+}
+
+#platypus {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
 }
 
 //
