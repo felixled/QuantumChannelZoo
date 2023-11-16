@@ -24,7 +24,7 @@ const render = async function (data)
     const { render_html_standalone } = await import('@phfaist/zoodb/zooflm');
 
     let content = `
-<p>List of people:</p>`;
+<h2>List of channels</h2>`;
 
     content += `
 <ul>`;
