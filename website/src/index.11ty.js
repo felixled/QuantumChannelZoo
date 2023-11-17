@@ -24,6 +24,28 @@ const render = async function (data)
     const { render_html_standalone } = await import('@phfaist/zoodb/zooflm');
 
     let content = `
+
+
+    <script type="text/javascript" src="~/website/javascripts/setupSearch.js" async></script>
+
+
+    <style>
+    #SearchWidget {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    #SearchWidget span {
+      font-style: normal;
+      color: #555;
+    }
+    /* Add more styles as needed */
+  </style>
+
+
+
 <h2>List of channels</h2>`;
 
     content += `
@@ -50,6 +72,15 @@ const render = async function (data)
 
     content += `
 </ul>
+
+<!-- Search Widget 
+<div
+  id="SearchWidget"
+  data-search-index-url="/dat/searchindex.json"
+>
+  <span style="font-style: italic">loading …</span>
+</div> -->
+
 `;
     return content;
 };

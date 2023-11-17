@@ -17,6 +17,3 @@ kraus_operators: |
 isometry: |
   \[| i \rangle_A \to | i \rangle_B \otimes | \psi_i \rangle_E \]
 
-relations:
-  parents:
-    - person_id: pauli
