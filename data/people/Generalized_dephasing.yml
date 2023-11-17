@@ -1,0 +1,22 @@
+
+person_id: general-dephase
+
+name: 'Generalized Dephasing Channel'
+
+biography: |
+
+  A generalized dephasing channel leaves a fixed orthonormal basis invariant and dephases the off-diagonal elements of a density matrix
+  with respect to this basis.
+  
+  Let \(\{\ket{\varphi_i}_E\}\) be a set of states, not necessarily orthogonal, on \(\mathcal{H}_E.\) The generalized dephasing channel is defined by 
+  \[ \mathcal{N}(\rho) = \tr_E V \rho V^\dagger = \sum_{i,j} \langle \varphi_i | \varphi_j \rangle \langle i | \rho | j \rangle \langle j |_B \].
+
+kraus_operators: | 
+
+
+isometry: |
+  \[| i \rangle_A \to | i \rangle_B \otimes | \psi_i \rangle_E \]
+
+relations:
+  parents:
+    - person_id: pauli

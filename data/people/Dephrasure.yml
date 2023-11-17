@@ -4,10 +4,16 @@ person_id: dephrasure
 name: 'Dephrasure Channel'
 
 biography: |
-  From , We know its channel expression is \[N_{p,q}(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + qtr(\rho)|e\rangle \langle e|\] \[N_{p,q}(\rho) = (1-q)(1-p)\rho + (1-q)pZ\rho Z + qtr(\rho)|e\rangle \langle e|\]
+  The dephrasure channel ~\cite{
+  doi:10.1103/PhysRevLett.121.160501} is the concatenation of a dephasing channel and an erasure channel. It is defined by \[N_{p,q}(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + qtr(\rho)|e\rangle \langle e|\] \[N_{p,q}(\rho) = (1-q)(1-p)\rho + (1-q)pZ\rho Z + qtr(\rho)|e\rangle \langle e|\].
 
 kraus_operators: |
-  pass
+ \begin{align*}
+    K_1 &= \sqrt{(1-p)(1-q)}I \\
+    K_2 &= \sqrt{(1-q)p}Z \\
+    K_3 &= \sqrt{q} |e\rangle \langle0| \\
+    K_4 &= \sqrt{q} |e\rangle \langle1|
+ \end{align*}
 
 isometry: |
   pass

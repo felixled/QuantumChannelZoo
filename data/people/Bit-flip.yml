@@ -4,7 +4,7 @@ person_id: bit-flip
 name: 'Bit-flip Channel'
 
 biography: |
-  Through the Lecture Notes for Spring 2023 MATH 595 pg. 24, we know the bit-flip channel is defined as \[ \mathscr{F}_p^X : \rho \mapsto (1-p)\rho + pX\rho X \]
+  The bit-flip channel, or the \(X\)-dephasing channel, can be thought of as the quantum analogue of the classical ~\href{https://en.wikipedia.org/wiki/Binary_symmetric_channel}{binary symmetric channel}. It is defined by \[ N_p^X : \rho \mapsto (1-p)\rho + pX\rho X \], with a bit flip error occurring with probability \(p\).
 
 kraus_operators: | 
   \[ 
@@ -14,11 +14,13 @@ kraus_operators: |
   \]
 
 isometry: |
-  \[ 
-    V = \begin{pmatrix}
-    \sqrt{1-p} & 0 \\
-    0 & \sqrt{p} \\
-    0 & \sqrt{1-p} \\
-    \sqrt{p} & 0 \\
-    \end{pmatrix} 
-  \]
+  \begin{align*}
+    \ket{0}_A &\mapsto \sqrt{1-p} (\ket{0}_B \otimes \ket{0}_E) + \sqrt{p} (\ket{1}_B \otimes \ket{1}_E)\\
+    \ket{1}_A &\mapsto \sqrt{1-p} (\ket{1}_B \otimes \ket{0}_E) + \sqrt{p}(\ket{0}_B \otimes \ket{1}_E)
+  \end{align*}
+
+
+relations:
+  parents:
+    - person_id: pauli
+    - person_id: general-dephase

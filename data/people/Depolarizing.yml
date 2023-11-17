@@ -17,11 +17,11 @@ kraus_operators: |
 
 isometry: |
   \begin{align*}
-      V =
-      \begin{pmatrix} 
-        \sqrt{1-p} & 0 \\ 0 & \sqrt{\frac{p}{3}} \\ 0 & -i\sqrt{\frac{p}{3}} \\ \sqrt{\frac{p}{3}} & 0 \\ 0 & \sqrt{1-p} \\ \sqrt{\frac{p}{3}} & 0 \\ i\sqrt{\frac{p}{3}} & 0 \\ 0 & -\sqrt{\frac{p}{3}} 
-      \end{pmatrix}
+   \ket{0} &\mapsto \sqrt{1-p} \ket{00} + \sqrt{\frac{p}{3}} \ket{11} + i \sqrt{\frac{p}{3}} \ket{12} +\sqrt{\frac{p}{3}} \ket{03}  \\
+   \ket{1} &\mapsto \sqrt{1-p} \ket{10} + \sqrt{\frac{p}{3}} \ket{01} - i \sqrt{\frac{p}{3}} \ket{02} - \sqrt{\frac{p}{3}} \ket{13} 
   \end{align*}
 
-
-
+relations:
+  parents:
+    - person_id: high_dim_depolar
+    - person_id: pauli

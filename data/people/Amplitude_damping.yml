@@ -28,3 +28,7 @@ choi_state: |
     \sqrt{1-\gamma} & 0 & 0 & 1-\gamma
   \end{pmatrix}
   \]
+
+relations:
+  parents:
+    - person_id: generalized_amplitude

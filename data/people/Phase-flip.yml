@@ -1,0 +1,25 @@
+
+person_id: phase-flip
+
+name: 'Phase-flip Channel'
+
+biography: |
+  The phase-flip channel, or \(Z\)-dephasing channel, is defined by 
+  \[ \mathcal{N}(\rho) = \tr_E V \rho V^\dagger = \sum_{i,j} \langle \varphi_i | \varphi_j \rangle \langle i | \rho | j \rangle \langle j |_B \].
+
+kraus_operators: | 
+    \[ \begin{array}{cc}
+      K_0 = \sqrt{1-p}\mathbb{1} & K_1 = \sqrt{p}Z \\
+    \end{array} \]
+
+isometry: |
+  \begin{align*}
+    \ket{0}_A &\mapsto \sqrt{1-p} (\ket{0}_B \otimes \ket{0}_E) + \sqrt{p} (\ket{0}_B \otimes \ket{1}_E)\\
+    \ket{1}_A &\mapsto \sqrt{1-p} (\ket{1}_B \otimes \ket{0}_E) - \sqrt{p}(\ket{1}_B \otimes \ket{1}_E)
+  \end{align*}
+
+
+relations:
+  parents:
+    - person_id: pauli
+    - person_id: general-dephase
