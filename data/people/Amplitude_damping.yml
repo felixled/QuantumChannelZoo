@@ -4,11 +4,10 @@ person_id: amplitude-damping
 name: 'Amplitude Damping Channel'
 
 biography: |
-  From~\cite{doi:10.1017/9781316809976}, the amplitude damping channel \( \mathcal{A}_{\gamma}(\rho) \) decays the excited state \( |1\rangle \) to the ground state \( |0\rangle \) with probability \( \gamma \) and
-  we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathcal{H}_E \cong \mathbb{C}^2 \).
+  The amplitude damping channel decays the excited state \( |1\rangle \) to the ground state \( |0\rangle \) with probability \( \gamma \). It is a qubit-qubit channel with qubit environment.~\cite{preset:WildeQIT}
 
 kraus_operators: | 
-  \begin{align*}
+  \begin{align*}  
     K_0 &= |0 \rangle \langle 0 | + \sqrt{1 - \gamma} \  |1 \rangle \langle 1 | = \begin{pmatrix} 1 & 0 \\ 0 & \sqrt{1-\gamma} \end{pmatrix} \\
     K_1 &= \sqrt{\gamma} \  |0 \rangle \langle 1 | = \begin{pmatrix} 0 & \sqrt{\gamma} \\ 0 & 0 \end{pmatrix}
   \end{align*}
@@ -32,3 +31,5 @@ choi_state: |
 relations:
   parents:
     - person_id: generalized_amplitude
+    - person_id: multilvl_amplitude_damping
+    - person_id: resonant_amplitude

@@ -4,7 +4,7 @@ person_id: generalized_amplitude
 name: Generalized Amplitude Damping Channel
 
 biography: |
-  From~\cite{doi:10.1103/PhysRevA.102.012401}, we have \(\mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^2\) and \(\mathcal{H}_E \cong \mathbb{C}^4\)
+   The generalized amplitude damping channel \(\mathcal{A}_{\gamma, N}\) is a qubit-qubit channel that allows for excitations from lower to higher levels.  ~\cite{doi:10.1103/PhysRevA.102.012401},
 
 kraus_operators: | 
   \begin{align*}
