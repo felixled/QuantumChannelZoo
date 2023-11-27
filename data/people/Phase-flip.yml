@@ -4,7 +4,7 @@ person_id: phase-flip
 name: 'Phase-flip Channel'
 
 biography: |
-  The phase-flip channel, or \(Z\)-dephasing channel, is defined by 
+  The phase-flip channel~\cite{doi:10.1017/9781316809976}, or \(Z\)-dephasing channel, is defined by 
   \[ \mathcal{N}(\rho) = \tr_E V \rho V^\dagger = \sum_{i,j} \langle \varphi_i | \varphi_j \rangle \langle i | \rho | j \rangle \langle j |_B \].
 
 kraus_operators: | 

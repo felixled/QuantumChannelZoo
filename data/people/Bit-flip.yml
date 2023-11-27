@@ -4,7 +4,7 @@ person_id: bit-flip
 name: 'Bit-flip Channel'
 
 biography: |
-  The bit-flip channel, or the \(X\)-dephasing channel, can be thought of as the quantum analogue of the classical ~\href{https://en.wikipedia.org/wiki/Binary_symmetric_channel}{binary symmetric channel}. It is defined by \[ N_p^X : \rho \mapsto (1-p)\rho + pX\rho X \], with a bit flip error occurring with probability \(p\).
+  The bit-flip channel~\cite{doi:10.1017/9781316809976}, or the \(X\)-dephasing channel, can be thought of as the quantum analogue of the classical ~\href{https://en.wikipedia.org/wiki/Binary_symmetric_channel}{binary symmetric channel}. It is defined by \[ N_p^X : \rho \mapsto (1-p)\rho + pX\rho X \], with a bit flip error occurring with probability \(p\).
 
 kraus_operators: | 
   \[ 
