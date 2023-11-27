@@ -24,6 +24,16 @@ isometry: |
    \ket{1} &\mapsto \sqrt{1-p} \ket{10} + \sqrt{\frac{p}{3}} \ket{01} - i \sqrt{\frac{p}{3}} \ket{02} - \sqrt{\frac{p}{3}} \ket{13} 
   \end{align*}
 
+choi_state: |
+  \[
+  \tau = \begin{pmatrix}
+      1 - \frac{2}{3}p & 0 & 0 & 1 - \frac{4}{3}p \\
+      0 & \frac{2}{3}p & 0 & 0 \\
+      0 & 0 & \frac{2}{3}p & 0 \\
+      1 - \frac{4}{3}p & 0 & 0 & 1 - \frac{2}{3}p
+  \end{pmatrix}
+  \]
+
 relations:
   parents:
     - person_id: high_dim_depolar
