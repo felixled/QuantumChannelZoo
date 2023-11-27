@@ -12,9 +12,10 @@ biography: |
 
 kraus_operators: | 
   \begin{align*}
-      \begin{array}{cccc}
-        K_0 = \sqrt{1-p} \mathbb{1} & K_1 = \sqrt{\frac{p}{3}}X & K_2 = \sqrt{\frac{p}{3}}Y & K_3 = \sqrt{\frac{p}{3}}Z
-      \end{array}
+    K_0 &= \sqrt{1-p} \mathbb{1} \\
+    K_1 &= \sqrt{\frac{p}{3}}X \\
+    K_2 &= \sqrt{\frac{p}{3}}Y \\
+    K_3 &= \sqrt{\frac{p}{3}}Z
   \end{align*}
 
 isometry: |

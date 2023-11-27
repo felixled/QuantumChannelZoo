@@ -8,9 +8,10 @@ biography: |
   
 
 kraus_operators: | 
-    \[ \begin{array}{cc}
-      K_0 = \sqrt{1-p}\mathbb{1} & K_1 = \sqrt{p}Z \\
-    \end{array} \]
+  \begin{align*}
+    K_0 &= \sqrt{1-p}\mathbb{1} \\
+    K_1 &= \sqrt{p}Z 
+  \end{align*}
 
 isometry: |
   \begin{align*}
