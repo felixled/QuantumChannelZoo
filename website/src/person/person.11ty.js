@@ -47,11 +47,10 @@ const render = async (data) => {
 <h1>${rdr(person.name)}</h1>
 
 <h2>Description</h2>
-<div style="margin: 1.5rem 0px">${ rdrblock(person.biography) }</div>`;
+<div style="margin: 1.5rem 0px">${rdrblock(person.biography)}</div>`;
 
-
-s += sqzhtml`
-<h2>Representations</h2>`
+    s += sqzhtml`
+<h2>Representations</h2>`;
 
     // add Kraus Operators
     if (person.kraus_operators != null) {
