@@ -28,6 +28,8 @@ isometry: |
   \[
     V = \sqrt{P_1}\begin{pmatrix}  1 & 0 \\ 0 & 1\end{pmatrix}\otimes\begin{pmatrix}  1 \\ 0 \\ 0 \\ 0\end{pmatrix} + \sqrt{P_2} \begin{pmatrix}  0 & 1 \\ 1 & 0\end{pmatrix}\otimes  \begin{pmatrix}  0 \\ 1 \\ 0 \\ 0\end{pmatrix} + \sqrt{P_3}\begin{pmatrix}  0 & -i \\ i & 0\end{pmatrix}\otimes \begin{pmatrix}  0 \\ 0 \\ i \\ 0\end{pmatrix} + \sqrt{P_4}\begin{pmatrix}  1 & 0 \\ 0 & -1\end{pmatrix}\otimes \begin{pmatrix}  0 \\ 0 \\ 0 \\ 1\end{pmatrix}
   \]
+
+choi_state: |
   \[
-    V = \begin{pmatrix}  \sqrt{P_1} & 0 \\ 0 & \sqrt{P_2} \\ 0 & \sqrt{P_3} \\ \sqrt{P_4} & 0\\ 0 & \sqrt{P_1} \\ \sqrt{P_2} & 0 \\ \sqrt{P_3}i & 0\\ 0 & -\sqrt{P_4}\end{pmatrix}
+    V = \begin{pmatrix}  \sqrt{P_1} & 0 \\ 0 & \sqrt{P_2} \\ 0 & -i \sqrt{P_3} \\ \sqrt{P_4} & 0\\ 0 & \sqrt{P_1} \\ \sqrt{P_2} & 0 \\ \sqrt{P_3}i & 0\\ 0 & -\sqrt{P_4}\end{pmatrix}
   \]

@@ -4,7 +4,7 @@ person_id: phase-flip
 name: 'Phase-flip Channel'
 
 biography: |
-  The phase-flip channel, or \(Z\)-dephasing channel, is defined by \[ \rho \mapsto (1-p)\rho + pZ\rho Z, \] with a phase flip error occurring with probability \(p\).
+  The phase-flip channel, or \(Z\)-dephasing channel, is defined by \[ \rho \mapsto (1-p)\rho + pZ\rho Z, \] with a phase flip error occurring with probability \(p\).~\cite{preset:WildeQIT}
   
 
 kraus_operators: | 

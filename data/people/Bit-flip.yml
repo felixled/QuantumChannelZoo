@@ -1,0 +1,26 @@
+
+person_id: bit-flip
+
+name: 'Bit-flip Channel'
+
+biography: |
+  The bit-flip channel, or the \(X\)-dephasing channel, can be thought of as the quantum analogue of the classical ~\href{https://en.wikipedia.org/wiki/Binary_symmetric_channel}{binary symmetric channel}. It is defined by \[ \rho \mapsto (1-p)\rho + pX\rho X, \] with a bit flip error occurring with probability \(p\).~\cite{preset:WildeQIT}
+
+kraus_operators: | 
+  \[ 
+    \begin{array}{cccc}
+      K_0 = \sqrt{1-p}\mathbb{1} & K_1 = \sqrt{p} X
+    \end{array}  
+  \]
+
+isometry: |
+  \begin{align*}
+    \ket{0}_A &\mapsto \sqrt{1-p} (\ket{0}_B \otimes \ket{0}_E) + \sqrt{p} (\ket{1}_B \otimes \ket{1}_E)\\
+    \ket{1}_A &\mapsto \sqrt{1-p} (\ket{1}_B \otimes \ket{0}_E) + \sqrt{p}(\ket{0}_B \otimes \ket{1}_E)
+  \end{align*}
+
+
+relations:
+  parents:
+    - person_id: pauli
+    - person_id: general-dephase
