@@ -1,12 +1,11 @@
-
 person_id: pauli
 
-name: 'Pauli Channel'
+name: "Pauli Channel"
 
 biography: |
-  The qubit Pauli channel is defined by \(\rho \mapsto p_1 \rho + p_2 X \rho X + p_3 Y \rho Y + p_4 Z \rho Z\). It generalizes the dephasing and depolarizing channels.
+  The qubit Pauli channel is defined by \(\rho \mapsto p_1 \rho + p_2 X \rho X + p_3 Y \rho Y + p_4 Z \rho Z\). It generalizes the dephasing and depolarizing channels.~\cite{preset:WildeQIT}
 
-kraus_operators: | 
+kraus_operators: |
   \begin{align*}
     K_0 &= \sqrt{P_1}I = \sqrt{P_1} \begin{pmatrix}  1 & 0 \\ 0 & 1\end{pmatrix} \\
     K_1 &= \sqrt{P_2}X = \sqrt{P_2} \begin{pmatrix}  0 & 1 \\ 1 & 0\end{pmatrix} \\
