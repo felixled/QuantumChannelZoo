@@ -14,8 +14,8 @@ kraus_operators: |
 
 isometry: |
   \begin{align*}
-    \ket{0}_A &\mapsto \sqrt{1-p} (\ket{0}_B \otimes \ket{0}_E) + \sqrt{p} (\ket{1}_B \otimes \ket{1}_E)\\
-    \ket{1}_A &\mapsto \sqrt{1-p} (\ket{1}_B \otimes \ket{0}_E) + \sqrt{p}(\ket{0}_B \otimes \ket{1}_E)
+    \ket{0}_A &\mapsto \sqrt{1-p} \ket{0}_B \otimes \ket{0}_E + \sqrt{p} \ket{1}_B \otimes \ket{1}_E\\
+    \ket{1}_A &\mapsto \sqrt{1-p} \ket{1}_B \otimes \ket{0}_E + \sqrt{p} \ket{0}_B \otimes \ket{1}_E
   \end{align*}
 
 
