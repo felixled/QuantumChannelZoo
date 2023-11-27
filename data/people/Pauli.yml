@@ -8,10 +8,10 @@ biography: |
 
 kraus_operators: | 
   \begin{align*}
-    K_1 &= \sqrt{P_1}I = \sqrt{P_1} \begin{pmatrix}  1 & 0 \\ 0 & 1\end{pmatrix} \\
-    K_2 &= \sqrt{P_2}X = \sqrt{P_2} \begin{pmatrix}  0 & 1 \\ 1 & 0\end{pmatrix} \\
-    K_3 &= \sqrt{P_3}Y = \sqrt{P_2} \begin{pmatrix}  0 & -i \\ i & 0\end{pmatrix} \\
-    K_4 &= \sqrt{P_4}Z = \sqrt{P_2} \begin{pmatrix}  1 & 0 \\ 0 & -1\end{pmatrix}
+    K_0 &= \sqrt{P_1}I = \sqrt{P_1} \begin{pmatrix}  1 & 0 \\ 0 & 1\end{pmatrix} \\
+    K_1 &= \sqrt{P_2}X = \sqrt{P_2} \begin{pmatrix}  0 & 1 \\ 1 & 0\end{pmatrix} \\
+    K_2 &= \sqrt{P_3}Y = \sqrt{P_2} \begin{pmatrix}  0 & -i \\ i & 0\end{pmatrix} \\
+    K_3 &= \sqrt{P_4}Z = \sqrt{P_2} \begin{pmatrix}  1 & 0 \\ 0 & -1\end{pmatrix}
   \end{align*}
 
 isometry: |

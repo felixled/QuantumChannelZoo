@@ -9,10 +9,10 @@ biography: |
 
 kraus_operators: |
  \begin{align*}
-    K_1 &= \sqrt{(1-p)(1-q)}I \\
-    K_2 &= \sqrt{(1-q)p}Z \\
-    K_3 &= \sqrt{q} |e\rangle \langle0| \\
-    K_4 &= \sqrt{q} |e\rangle \langle1|
+    K_0 &= \sqrt{(1-p)(1-q)}I \\
+    K_1 &= \sqrt{(1-q)p}Z \\
+    K_2 &= \sqrt{q} |e\rangle \langle0| \\
+    K_3 &= \sqrt{q} |e\rangle \langle1|
  \end{align*}
 
 isometry: |
