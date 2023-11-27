@@ -19,6 +19,15 @@ isometry: |
     \ket{1}_A &\mapsto \sqrt{1-p} (\ket{1}_B \otimes \ket{0}_E) - \sqrt{p}(\ket{1}_B \otimes \ket{1}_E)
   \end{align*}
 
+choi_state: |
+  \[
+  \tau = \begin{pmatrix}
+    1 & 0 & 0 & 1-2p \\
+    0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 \\
+    1-2p & 0 & 0 & 1
+  \end{pmatrix}
+  \]
 
 relations:
   parents:
