@@ -4,7 +4,6 @@
 # paste the full CSL/JSON entry as YAML or JSON.
 #
 
-
 # e.g., we can use this entry in FLM content as
 # "\cite{preset:AliceAndBobsWonderfulAdventures}"
 AliceAndBobsWonderfulAdventures:
@@ -15,5 +14,4 @@ AliceAndBobsWonderfulAdventures:
 WildeQIT:
   _ready_formatted:
     flm: >-
-      Wilde, M. (2017). Quantum Information Theory (2nd ed.). Cambridge: Cambridge University Press. doi:10.1017/9781316809976
-
+      Wilde, M. (2017). Quantum Information Theory (2nd ed.). Cambridge: Cambridge University Press. \href{https://www.cambridge.org/core/books/quantum-information-theory/247A740E156416531AA8CB97DFDAE438}{DOI}
