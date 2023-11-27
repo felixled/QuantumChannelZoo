@@ -4,9 +4,9 @@ person_id: multilvl_amplitude_damping
 name: 'Multi-level Amplitude Damping Channel'
 
 biography: |
-  We have \(\mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^d\) and \(\mathcal{H}_E \cong \mathbb{C}^{d(d-1)/2+1}\) ~\cite{doi:10.1038/s42005-021-00524-4}
+  The multi-level amplitude damping channels describe the decaying of energy levels of a \(d\)-dimensional quantum system. ~\cite{doi:10.1038/s42005-021-00524-4} The minimal dimension of the environment is \(\frac{d(d-1)}{2}+1\).
 
-kraus_operators: |
+kraus_operators: 
   \begin{align*}
    K_0 &=  |0 \rangle \langle 0| + \sum_{1 \leq j \leq d-1} \sqrt{1-\xi_j} |j \rangle \langle j| \\
    K_{ij}  &= \sqrt{\gamma_{ij}} |i \rangle \langle j| \qquad \text{ for \(0 \leq i < j \leq d-1\) }
