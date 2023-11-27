@@ -4,7 +4,7 @@ person_id: high_dim_depolar
 name: 'Higher-dimensional Depolarizing Channel'
 
 biography: |
-  For \(q\in[0,d^2/(d^2-1)]\) and \(\rho\in\cL(\mathbb{C}^d)\), \[\cD_{q,d}(\rho) = (1-q)\rho + \tr(\rho) \frac{1}{d} \one.\]
+  For \(q\in[0,d^2/(d^2-1)]\) and \(\rho\in\mathcal{L}(\mathbb{C}^d)\), \[\mathcal{D}_{q,d}(\rho) = (1-q)\rho + \mathrm{tr}(\rho) \frac{1}{d} \mathbb{1}.\]
   
   See \url{https://en.wikipedia.org/wiki/Quantum_depolarizing_channel}.
 

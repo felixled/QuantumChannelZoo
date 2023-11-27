@@ -4,8 +4,7 @@ person_id: erasure
 name: '(Qubit) Erasure Channel'
 
 biography: |
-  From~\cite{doi:10.1017/9781316809976}, the erasure channel, \( \mathcal{N}_{\epsilon}(\rho) := (1-\epsilon)\rho + \epsilon |e\rangle \langle e| \), transmits a qubit with probability \( 1 - \epsilon \) and "erases" it with probability \( \epsilon \).
-  We have \( \mathcal{H}_A \cong \mathbb{C}^2\) and \( \mathcal{H}_B \cong \mathcal{H}_E \cong \mathbb{C}^3 \).
+  The erasure channel is defined by \( \mathcal{N}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon |e\rangle \langle e| \). It can be understood as leaving a qubit unchanged with probability \( 1 - \epsilon \) and "erasing" it with probability \( \epsilon \).~\cite{preset:WildeQIT}
 
 kraus_operators: | 
   \begin{align*}
@@ -13,7 +12,6 @@ kraus_operators: |
     K_1 &= \sqrt{\epsilon} \  |e \rangle \langle 0 | = \sqrt{\epsilon}\begin{pmatrix}0 & 0\\0 & 0\\1 & 0	\end{pmatrix} \\
     K_2 &= \sqrt{\epsilon} \  |e \rangle \langle 1 | = \sqrt{p}\begin{pmatrix}0 & 0\\0 & 0\\ 0 & 1	\end{pmatrix}
   \end{align*}
-  where \(|e\rangle \perp {\mathcal{H}_A}\)
 
 isometry: |
   \begin{align*}

@@ -4,9 +4,11 @@ person_id: depolarizing
 name: 'Depolarizing Channel'
 
 biography: |
-  The depolarizing channel~\cite{doi:10.1017/9781316809976} \(\mathcal{D}_q\colon A\to B\) with \(\mathcal{H}_A = \mathcal{H}_B = \mathbb{C}^2\) is a qubit channel defined as 
+  The depolarizing channel is a qubit channel defined as 
     \[ \mathcal{D}_q(\rho) = (1-q)\rho + q \operatorname{tr}(\rho)\frac{\mathbb{1}}{2} = (1-p)\rho + \frac{p}{3} X \rho X + \frac{p}{3} Y \rho Y + \frac{p}{3} Z \rho Z, \]
   where \(p\in[0,1]\) and \(q=4p/3\).
+
+  It can be thought of as a model of a decohering qubit, with the qubit remaining intact with probability \(1-p\), and an "error" occurs with probability \(p\). The error can be either a bit-flip error, a phase-flip error, or both. Each error is equally likely and occurs with probability \(\frac{p}{3}\).~\cite{preset:WildeQIT}
 
 kraus_operators: | 
   \begin{align*}

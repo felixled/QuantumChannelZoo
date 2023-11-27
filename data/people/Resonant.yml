@@ -1,13 +1,13 @@
 
 person_id: resonant_amplitude
 
-name: Resonant Multilevel Amplitude Damping Channel
+name: Resonant Multi-level Amplitude Damping Channel
 
 biography: |
-  From~\cite{doi:10.22331/q-2023-01-19-902}, we have \(\mathcal{H}_A \cong \mathcal{H}_B \cong \mathcal{H}_E \cong \mathbb{C}^d \)
+  The resonant multi-level amplitude damping channels are a variant of multi-level amplitude damping channels that have an environment unable to discriminate between transitions with identical energy gaps.
 
-  Elements \( \gamma_{j,k}\) for \(j \leq k \in \{0, \dots, d-1 \}\) of a lower-triangular \( d \times d\) transition matrix are positive semidefinite quantities that define the transition probabilities.
-  They need to satisfy by consistency requirements that \[ \sum_{k=0}^{j} \gamma_{j,k} = 1\ , \quad \forall j \in \{0, 1, \dots, d-1\}.  \]
+  The probability of transitioning from energy level \(|j\rangle\) to a lower energy level \(|k\rangle\) is denoted \( \gamma_{j,k}\) for \(j \leq k \in \{0, \dots, d-1 \}\).
+  They satisfy \[ \sum_{k=0}^{j} \gamma_{j,k} = 1\ , \quad \forall j \in \{0, 1, \dots, d-1\}.\]~\cite{doi:10.22331/q-2023-01-19-902}
 
 kraus_operators: | 
   \begin{align*}

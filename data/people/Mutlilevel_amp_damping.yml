@@ -1,0 +1,24 @@
+
+person_id: multilvl_amplitude_damping
+
+name: 'Multi-level Amplitude Damping Channel'
+
+biography: |
+  The multi-level amplitude damping channels describes the decaying of energy levels of a \(d\)-dimensional quantum system. ~\cite{doi:10.1038/s42005-021-00524-4}
+
+kraus_operators: |
+  \begin{align*}
+   K_0 &=  |0 \rangle \langle 0| + \sum_{1 \leq j \leq d-1} \sqrt{1-\xi_j} |j \rangle \langle j| \\
+   K_{ij}  &= \sqrt{\gamma_{ij}} |i \rangle \langle j| \qquad \text{ for \(0 \leq i < j \leq d-1\) }
+  \end{align*}
+  where \(\gamma_{ji}\) describe the decay rate from the \(j\)-th level to the \(i\)-th level, and satisfy 
+  \begin{align*}
+  \xi_j &= \sum_{0 \leq i < j} \gamma_{ji} \leq 1 \qquad \text{ for \(0 \leq j \leq d-1 \)}\\
+  0 &\leq \gamma_{ji} \leq 1 \qquad \text{ for \(0 \leq i < j \leq d-1\) }
+
+  \end{align*}
+  
+isometry: |
+  pass
+
+

@@ -4,7 +4,7 @@ person_id: pauli
 name: 'Pauli Channel'
 
 biography: |
-  Through the Lecture Notes for Spring 2023 MATH 595 pg. 24, we know the bit-flip channel is defined as \[ \mathscr{F}_p^X : \rho \mapsto (1-p)\rho + pX\rho X \]
+  The qubit Pauli channel is defined by \(\rho \mapsto p_1 \rho + p_2 X \rho X + p_3 Y \rho Y + p_4 Z \rho Z\). It generalizes the dephasing and depolarizing channels.
 
 kraus_operators: | 
   \begin{align*}
