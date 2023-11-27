@@ -16,5 +16,5 @@ kraus_operators: |
 
 isometry: |
   \begin{align*}
-    {|i \rangle}_A &\rightarrow \sum_{j=0}^{i} \sqrt{\gamma_{i,i - j}} \  {|i-j\rangle}_B \otimes {|j\rangle}_E \quad \text{for } i \in \{0, \dots, d-1 \}
+    {|i \rangle}_A &\mapsto \sum_{j=0}^{i} \sqrt{\gamma_{i,i - j}} \  {|i-j\rangle}_B \otimes {|j\rangle}_E \quad \text{for } i \in \{0, \dots, d-1 \}
   \end{align*}
