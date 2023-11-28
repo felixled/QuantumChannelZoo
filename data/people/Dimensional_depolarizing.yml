@@ -5,7 +5,7 @@ name: "Higher-dimensional Depolarizing Channel"
 biography: |
   For \(q\in[0,d^2/(d^2-1)]\) and \(\rho\in\mathcal{L}(\mathbb{C}^d)\), \[\mathcal{D}_{q,d}(\rho) = (1-q)\rho + \mathrm{tr}(\rho) \frac{1}{d} \mathbb{1}.\]
 
-  For more detailed information, please see in \href{https://en.wikipedia.org/wiki/Quantum_depolarizing_channel}{Higher-dimensional Depolarizing Channel}.
+  For more detailed information, please see \href{https://en.wikipedia.org/wiki/Quantum_depolarizing_channel}{the wikipedia entry for the higher-dimensional depolarizing channel}.
 
 kraus_operators: |
   pass

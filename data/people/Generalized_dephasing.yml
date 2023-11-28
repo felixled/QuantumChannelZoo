@@ -4,16 +4,19 @@ person_id: general-dephase
 name: 'Generalized Dephasing Channel'
 
 biography: |
-
   A generalized dephasing channel leaves a fixed orthonormal basis invariant and dephases the off-diagonal elements of a density matrix
   with respect to this basis.
   
-  Let \(\{\ket{\varphi_i}_E\}\) be a set of states, not necessarily orthogonal, on \(\mathcal{H}_E.\) The generalized dephasing channel is defined by 
-  \[ \mathcal{N}(\rho) = \mathrm{tr}_E V \rho V^\dagger = \sum_{i,j} \langle \varphi_i | \varphi_j \rangle \langle i | \rho | j \rangle \langle j |_B \].
+  To define it, let \(\{\ket{i}_A\}_{i=1}^d\) be an orthonormal basis for the input/output space \(\mathbb{C}^d\), and let \(\{\ket{\varphi_i}_E\}_{i=1}^d\) be some set of not necessarily orthogonal states on \(\mathcal{H}_E\) with \(d_E=\dim\mathcal{H}_E \geq 2\). The generalized dephasing channel is defined by 
+  \begin{align*}
+  \mathcal{N}(\rho) = \sum_{i,j} \langle \varphi_i | \varphi_j \rangle \langle i | \rho | j \rangle |i\rangle\langle j |_B.
+  \end{align*}
 
-kraus_operators: | 
-
+kraus_operators: |
+  Let \(\{\ket{e_j}_E\}_{j=1}^{d_E}\) be some orthonormal basis for \(E\). Then for \(j=1,\dots,d_E\),
+  \[ 
+  K_j = \sum_{i=1}^d \langle e_j|\varphi_i\rangle |i\rangle_B\langle i|_A.
+  \]
 
 isometry: |
-  \[| i \rangle_A \to | i \rangle_B \otimes | \psi_i \rangle_E \]
-
+  \[| i \rangle_A \to | i \rangle_B \otimes | \varphi_i \rangle_E \quad\text{for } i=1,\dots,d.\]

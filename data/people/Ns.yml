@@ -38,3 +38,4 @@ choi_state: |
 relations:
   parents:
     - person_id: platypus_m_d
+    - person_id: platypus_o

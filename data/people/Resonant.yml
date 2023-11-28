@@ -4,17 +4,17 @@ person_id: resonant_amplitude
 name: Resonant Multi-level Amplitude Damping Channel
 
 biography: |
-  The resonant multi-level amplitude damping channels are a variant of multi-level amplitude damping channels that have an environment unable to discriminate between transitions with identical energy gaps.
+  The resonant multi-level amplitude damping channels are a variant of multi-level amplitude damping channels that have an environment unable to discriminate between transitions with identical energy gaps.\cite{doi:10.22331/q-2023-01-19-902}
 
   The probability of transitioning from energy level \(|j\rangle\) to a lower energy level \(|k\rangle\) is denoted \( \gamma_{j,k}\) for \(j \leq k \in \{0, \dots, d-1 \}\).
-  They satisfy \[ \sum_{k=0}^{j} \gamma_{j,k} = 1\ , \quad \forall j \in \{0, 1, \dots, d-1\}.\]~\cite{doi:10.22331/q-2023-01-19-902}
+  They satisfy \[ \sum_{k=0}^{j} \gamma_{j,k} = 1 \quad \text{for }j = 0, 1, \dots, d-1.\]
 
 kraus_operators: | 
   \begin{align*}
-    K_i = \sum_{l=0}^{d-i-l} \sqrt{\gamma_{i+l,l}} \  {|l\rangle \langle i+l |}_{A} \ , \quad \forall i \in \{0, \dots, d-1\}
+    K_i = \sum_{l=0}^{d-i-l} \sqrt{\gamma_{i+l,l}} \  {|l\rangle \langle i+l |}_{A}  \quad \text{for } i = 0, \dots, d-1.
   \end{align*}
 
 isometry: |
   \begin{align*}
-    {|i \rangle}_A &\mapsto \sum_{j=0}^{i} \sqrt{\gamma_{i,i - j}} \  {|i-j\rangle}_B \otimes {|j\rangle}_E \quad \text{for } i \in \{0, \dots, d-1 \}
+    {|i \rangle}_A &\mapsto \sum_{j=0}^{i} \sqrt{\gamma_{i,i - j}} \  {|i-j\rangle}_B \otimes {|j\rangle}_E \quad \text{for } i = 0, \dots, d-1.
   \end{align*}

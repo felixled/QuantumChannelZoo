@@ -4,12 +4,12 @@ person_id: bit-flip
 name: 'Bit-flip Channel'
 
 biography: |
-  The bit-flip channel, or the \(X\)-dephasing channel, can be thought of as the quantum analogue of the classical ~\href{https://en.wikipedia.org/wiki/Binary_symmetric_channel}{binary symmetric channel}. It is defined by \[ \rho \mapsto (1-p)\rho + pX\rho X, \] with a bit flip error occurring with probability \(p\).~\cite{preset:WildeQIT}
+  The bit-flip channel, or the \(X\)-dephasing channel, can be thought of as the quantum analogue of the classical ~\href{https://en.wikipedia.org/wiki/Binary_symmetric_channel}{binary symmetric channel}. It is defined by \[ \rho \mapsto (1-p)\rho + pX\rho X, \] with a bit flip error occurring with probability \(p\).\cite{preset:WildeQIT}
 
 kraus_operators: | 
   \begin{align*}  
-    K_0 &= \sqrt{1-p}\mathbb{1} \\
-    K_1 &= \sqrt{p} X
+    K_0 &= \sqrt{1-p}\mathbb{1} = \begin{pmatrix} \sqrt{1-p} & 0\\ 0 & \sqrt{1-p}\end{pmatrix} \\
+    K_1 &= \sqrt{p} X = \begin{pmatrix} 0 & \sqrt{p} \\ \sqrt{p} & 0\end{pmatrix}
   \end{align*}    
 
 isometry: |
