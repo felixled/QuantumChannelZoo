@@ -2,7 +2,7 @@ $schema: "http://json-schema.org/draft-06/schema"
 
 type: object
 additionalProperties: false
-required: ['person_id', 'name', 'biography', 'kraus_operators', 'isometry', ]
+required: ['person_id', 'name', 'biography', 'kraus_operators', 'isometry']
 
 _zoo_primarykey: 'person_id'
 
@@ -71,6 +71,12 @@ properties:
     _flm: full
     _description: >-
       Describe choi state for the channel.
+
+  dimensions:
+    type: string
+    _flm: full
+    _description: >-
+      Dimensions of input, output and minimal environment.
 
   wiki_link:
     type: string
