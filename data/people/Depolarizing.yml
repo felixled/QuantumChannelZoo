@@ -8,7 +8,10 @@ biography: |
     \[ \mathcal{D}_q(\rho) = (1-q)\rho + q \operatorname{tr}(\rho)\frac{\mathbb{1}}{2} = (1-p)\rho + \frac{p}{3} X \rho X + \frac{p}{3} Y \rho Y + \frac{p}{3} Z \rho Z, \]
   where \(p\in[0,1]\) and \(q=4p/3\).
 
-  It can be thought of as a model of a decohering qubit, with the qubit remaining intact with probability \(1-p\), and an "error" occurs with probability \(p\). The error can be either a bit-flip error, a phase-flip error, or both. Each error is equally likely and occurs with probability \(\frac{p}{3}\).~\cite{preset:WildeQIT}
+  It can be thought of as a model of a decohering qubit, with the qubit remaining intact with probability \(1-p\), and an "error" occurs with probability \(p\). The error can be either a bit-flip error, a phase-flip error, or both. Each error is equally likely and occurs with probability \(\frac{p}{3}\).\cite{preset:WildeQIT}
+
+dimensions: |
+  \((2,2,4)\)
 
 kraus_operators: | 
   \begin{align*}
