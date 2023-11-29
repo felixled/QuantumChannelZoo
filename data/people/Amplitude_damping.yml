@@ -28,6 +28,8 @@ choi_state: |
   \end{pmatrix}
   \]
 
+wiki_link: 'https://en.wikipedia.org/wiki/Amplitude_damping'
+
 relations:
   parents:
     - person_id: generalized_amplitude

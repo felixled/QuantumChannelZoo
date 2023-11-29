@@ -3,6 +3,7 @@
 //
 
 html, body {
+    margin: 0px; 
     background-color: white;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -15,6 +16,7 @@ header, main, footer {
     max-width: 930px;
     background-color: white;
     padding: 15px;
+    color: #13294B;
 }
 
 header {
@@ -29,9 +31,25 @@ header a:visited {color: white;}
 .title h1 {margin: 0px;}
 .menu {grid-column: 2; grid-row: 2;}
 
-a:link {color: #3370cc;}
+article a:link {color: #3370cc;}
 
-a:visited {color: #3370cc;}
+article a:visited {color: #3370cc;}
+
+article h1 {margin: 0px;}
+.channel-title-wrapper {margin: 1.6rem 0px; display: flex; justify-content: space-between;}
+.channel-title-link {
+    padding: 0px 0.5rem;
+    border-radius: 10px;
+    border: solid 1px #4D69A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.channel-title-link:link span {margin-left: 0.5rem; color: #4D69A0;}
+.channel-title-link:link i {color: #4D69A0}
+.channel-title-link:hover {background-color: #F4F4F4;}
+.channel-title-link:visited i, .channel-title-link:visited span {color: #4D69A0;}
+article h2 {border-bottom: solid 1px #DDDEDE;}
 
 footer {
     font-size: 0.92rem;

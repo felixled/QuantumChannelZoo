@@ -29,3 +29,5 @@ choi_state: |
     \sqrt{1-\gamma} & 0 & 0 & 1 - \gamma + N\gamma
   \end{pmatrix}
   \]
+
+wiki_link: 'https://en.wikipedia.org/wiki/Amplitude_damping'

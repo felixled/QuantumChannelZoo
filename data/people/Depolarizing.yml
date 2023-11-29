@@ -34,6 +34,8 @@ choi_state: |
   \end{pmatrix}
   \]
 
+wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'
+
 relations:
   parents:
     - person_id: high_dim_depolar

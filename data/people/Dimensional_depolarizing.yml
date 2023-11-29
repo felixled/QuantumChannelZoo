@@ -12,3 +12,5 @@ kraus_operators: |
 
 isometry: |
   pass
+
+wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'

@@ -72,7 +72,12 @@ properties:
     _description: >-
       Describe choi state for the channel.
 
-
+  wiki_link:
+    type: string
+    _flm: standalone
+    _single_line_string: true
+    _description: >-
+      A link to the channel's Wikipedia page.
 
   #
   # Relations:

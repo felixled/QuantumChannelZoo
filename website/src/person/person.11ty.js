@@ -44,8 +44,14 @@ const render = async (data) => {
 
     s += sqzhtml`
 <article>
+<div class="channel-title-wrapper">
 <h1>${rdr(person.name)}</h1>
-
+<a class="channel-title-link" style="${person.wiki_link ? '' : 'display: none'}"
+  href="${person.wiki_link ? rdr(person.wiki_link) : ''}">
+<i class="fa-solid fa-link"></i>
+<span>Wiki</span>
+</a>
+</div>
 <h2>Description</h2>
 <div style="margin: 1.5rem 0px">${rdrblock(person.biography)}</div>`;
 
