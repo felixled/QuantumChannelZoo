@@ -61,8 +61,11 @@ if (person.dimensions != null) {
     }
 
 
-    s += sqzhtml`
-<h2>Representations</h2>`;
+    
+    if (person.kraus_operators != null || person.isometry != null || person.choi_state != null) {
+	s += sqzhtml`
+	<h2>Representations</h2>`;
+    }
 
     // add Kraus Operators
     if (person.kraus_operators != null) {

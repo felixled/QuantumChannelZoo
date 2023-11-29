@@ -14,6 +14,8 @@ website displaying information stored in a database of YAML files.
 You can edit the data files, or add additional data files, in the
 `zoodb/example/data` folder. Go ahead and play around :)
 
+Test: \\[a^2\\]
+
 This example website is powered by the wonderful [eleventy static website
 generator](https://11ty.dev/) and [parceljs bundler](https://parceljs.org/).
 Content template files can be written in HTML, JavaScript, Markdown, and more.

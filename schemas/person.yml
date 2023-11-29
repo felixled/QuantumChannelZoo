@@ -2,7 +2,7 @@ $schema: "http://json-schema.org/draft-06/schema"
 
 type: object
 additionalProperties: false
-required: ['person_id', 'name', 'biography', 'kraus_operators', 'isometry']
+required: ['person_id', 'name', 'biography']
 
 _zoo_primarykey: 'person_id'
 
