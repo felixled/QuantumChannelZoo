@@ -46,7 +46,7 @@ const render = async function (data)
 
 <p class="abt">
 This is the Quantum Channel Zoo, a website collecting useful mathematical and information-theoretic facts about various quantum channels.
-It was created using the <a href="https://github.com/phfaist/zoodb" target="_blank">ZooDb</a> as the final project of an <a href="https://math.illinois.edu/research/illinois-geometry-lab" target="_blank">IGL</a> undergraduate research project conducted in the 2023 Fall term at the University of Illinois Urbana-Champaign.
+The Quantum Channel Zoo was founded in an <a href="https://math.illinois.edu/research/illinois-geometry-lab" target="_blank">IGL</a> undergraduate research project conducted in the 2023 Fall term at the University of Illinois Urbana-Champaign, and is built using <a href="https://github.com/phfaist/zoodb" target="_blank">ZooDb</a>.
 </p>
 
 <p class="abt">

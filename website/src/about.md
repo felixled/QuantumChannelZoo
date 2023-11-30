@@ -11,7 +11,7 @@ This is the Quantum Channel Zoo, a website collecting useful mathematical and in
 It was created in an <a href="https://math.illinois.edu/research/illinois-geometry-lab" target="_blank">IGL</a> undergraduate research project conducted in the 2023 Fall term at the University of Illinois Urbana-Champaign.
 The IGL team consisted of undergraduate students <a href="mailto:bbook3@illinois.edu">Ben Booker</a>, <a href="mailto:tgao13@illinois.edu">Tianshun Gao</a>, <a href="mailto:xque2@illinois.edu">Anne Que</a>, <a href="mailto:yuxuanw8@illinois.edu">Yuxuan Wan</a> and <a href="mailto:jiabaox3@illinois.edu">Lumi Xu</a>, graduate student
 <a href="mailto:sgb4@illinois.edu">Sujeet Bhalerao</a> and faculty advisor <a href="mailto:leditzky@illinois.edu">Felix Leditzky</a>.
-The website is created using the <a href="https://github.com/phfaist/zoodb" target="_blank">ZooDb</a>.
+The website is created using <a href="https://github.com/phfaist/zoodb" target="_blank">ZooDb</a>.
 </p>
 
 # How to contribute
