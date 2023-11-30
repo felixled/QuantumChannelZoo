@@ -17,7 +17,7 @@ The website is created using <a href="https://github.com/phfaist/zoodb" target="
 # How to contribute
 
 <p class="abt">
-The zookeepers need your help keeping this database uptodate! For more information, please consult the `README.md` file in our <a href="#" target="_blank">Github repository</a>.
+The zookeepers need your help keeping this database up-to-date! For more information, please consult the `README.md` file in our <a href="#" target="_blank">Github repository</a>.
 </p>
 
 # How to use this website
