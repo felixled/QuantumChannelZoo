@@ -6,6 +6,9 @@ name: '(Qubit) Erasure Channel'
 biography: |
   The erasure channel is defined by \( \mathcal{N}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon |e\rangle \langle e| \). It can be understood as leaving a qubit unchanged with probability \( 1 - \epsilon \) and "erasing" it with probability \( \epsilon \).~\cite{preset:WildeQIT}
 
+dimensions: |
+  \( (2,3,3) \)
+
 kraus_operators: | 
   \begin{align*}
     K_0 &= \sqrt{1-\epsilon} \  (|0 \rangle \langle 0 | + |1 \rangle \langle 1 |) = \sqrt{1-\epsilon} \begin{pmatrix} 1 & 0\\0 & 1\\0&0\end{pmatrix} \\

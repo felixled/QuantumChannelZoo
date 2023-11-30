@@ -7,4 +7,7 @@ biography: |
 
   For more detailed information, please see \href{https://en.wikipedia.org/wiki/Quantum_depolarizing_channel}{the wikipedia entry for the higher-dimensional depolarizing channel}.
 
+dimensions: |
+  \( (d,d,d^2) \)
+
 wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'

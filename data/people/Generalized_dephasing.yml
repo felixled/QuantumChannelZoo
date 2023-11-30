@@ -12,6 +12,9 @@ biography: |
   \mathcal{N}(\rho) = \sum_{i,j} \langle \varphi_i | \varphi_j \rangle \langle i | \rho | j \rangle |i\rangle\langle j |_B.
   \end{align*}
 
+dimensions: |
+  \( (d,d,d_E) \)
+
 kraus_operators: |
   Let \(\{\ket{e_j}_E\}_{j=1}^{d_E}\) be some orthonormal basis for \(E\). Then for \(j=1,\dots,d_E\),
   \[ 

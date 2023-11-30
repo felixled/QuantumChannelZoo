@@ -6,6 +6,9 @@ name: \(d\)-dimensional Platypus Channel
 biography: |
   From~\cite{doi:10.1109/TIT.2023.3245985}, we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
 
+dimensions: |
+  \( (d,d,d-1) \)
+
 kraus_operators: | 
   \begin{align*}
     K_i &= \frac{1}{\sqrt{d-1}} {|i\rangle}_B {\langle0|}_A + {|d-1\rangle}_B {\langle i+1|}_A \quad \text{for } i = 0, \dots, d-2

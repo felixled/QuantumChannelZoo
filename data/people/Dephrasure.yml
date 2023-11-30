@@ -7,6 +7,9 @@ biography: |
   The dephrasure channel ~\cite{
   doi:10.1103/PhysRevLett.121.160501} is the concatenation of a dephasing channel and an erasure channel. It is defined by \[N_{p,q}(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + q \mathrm{tr}(\rho)|e\rangle \langle e|. \]
 
+dimensions: |
+   \( (2,3,4) \)
+
 kraus_operators: |
  \begin{align*}
     K_0 &= \sqrt{(1-p)(1-q)}I \\

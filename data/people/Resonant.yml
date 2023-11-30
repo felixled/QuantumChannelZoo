@@ -9,6 +9,9 @@ biography: |
   The probability of transitioning from energy level \(|j\rangle\) to a lower energy level \(|k\rangle\) is denoted \( \gamma_{j,k}\) for \(j \leq k \in \{0, \dots, d-1 \}\).
   They satisfy \[ \sum_{k=0}^{j} \gamma_{j,k} = 1 \quad \text{for }j = 0, 1, \dots, d-1.\]
 
+dimensions: |
+  \( (d,d,d) \)
+
 kraus_operators: | 
   \begin{align*}
     K_i = \sum_{l=0}^{d-i-l} \sqrt{\gamma_{i+l,l}} \  {|l\rangle \langle i+l |}_{A}  \quad \text{for } i = 0, \dots, d-1.
