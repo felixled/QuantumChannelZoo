@@ -14,7 +14,7 @@ website displaying information stored in a database of YAML files.
 You can edit the data files, or add additional data files, in the
 `zoodb/example/data` folder. Go ahead and play around :)
 
-Test: \\[a^2\\]
+Test: <span class="inline-math">\\\(a^2+b=c\\\)</span>
 
 This example website is powered by the wonderful [eleventy static website
 generator](https://11ty.dev/) and [parceljs bundler](https://parceljs.org/).
