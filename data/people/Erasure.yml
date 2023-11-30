@@ -26,7 +26,7 @@ isometry: |
 
 choi_state: |
   \[
-  \tau = \begin{pmatrix}
+  \tau_{AB} = \begin{pmatrix}
     1-\epsilon & 0 & 0 & 0 & 1-\epsilon & 0 \\
     0 & 0 & 0 & 0 & 0 & 0 \\
     0 & 0 & \epsilon & 0 & 0 & 0 \\

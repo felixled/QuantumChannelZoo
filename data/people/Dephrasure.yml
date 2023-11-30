@@ -4,8 +4,8 @@ person_id: dephrasure
 name: 'Dephrasure Channel'
 
 biography: |
-  The dephrasure channel ~\cite{
-  doi:10.1103/PhysRevLett.121.160501} is the concatenation of a dephasing channel and an erasure channel. It is defined by \[N_{p,q}(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + q \mathrm{tr}(\rho)|e\rangle \langle e|. \]
+  The dephrasure channel is the concatenation of a dephasing channel and an erasure channel. It is defined by \[N_{p,q}(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + q \mathrm{tr}(\rho)|e\rangle \langle e|.\]~\cite{
+doi:10.1103/PhysRevLett.121.160501}
 
 dimensions: |
    \( (2,3,4) \)
@@ -14,19 +14,19 @@ kraus_operators: |
  \begin{align*}
     K_0 &= \sqrt{(1-p)(1-q)}I \\
     K_1 &= \sqrt{(1-q)p}Z \\
-    K_2 &= \sqrt{q} |e\rangle \langle0| \\
-    K_3 &= \sqrt{q} |e\rangle \langle1|
+    K_2 &= \sqrt{q} \ket{e} \bra{0} \\
+    K_3 &= \sqrt{q} \ket{e} \bra{1}
  \end{align*}
 
 isometry: |
   \begin{align*}
-  {|0 \rangle}_A &\mapsto \sqrt{(1-p)(1-q)} |0\rangle \otimes |0\rangle + \sqrt{(1-q)p} |0\rangle \otimes |1\rangle + \sqrt{q} |e\rangle \otimes |2\rangle \\
-  {|1 \rangle}_A &\mapsto \sqrt{(1-p)(1-q)}|1\rangle \otimes |0\rangle - \sqrt{(1-q)p}|1\rangle \otimes |1\rangle + 0 + \sqrt{q} |e\rangle|1\rangle \otimes |3\rangle
+  {|0 \rangle}_A &\mapsto \sqrt{(1-p)(1-q)} |0\rangle_B |0\rangle_E + \sqrt{(1-q)p} |0\rangle_B |1\rangle_E + \sqrt{q} |e\rangle_B |2\rangle_E \\
+  {|1 \rangle}_A &\mapsto \sqrt{(1-p)(1-q)}|1\rangle_B |0\rangle_E - \sqrt{(1-q)p}|1\rangle_B |1\rangle_E + \sqrt{q} |e\rangle_B |3\rangle_E 
   \end{align*}
 
 choi_state: |
   \[
-  \tau = \begin{pmatrix}
+  \tau_{AB} = \begin{pmatrix}
     1-q & 0 & 0 & 0 & (1-2p)(1-q) & 0 \\
     0 & 0 & 0 & 0 & 0 & 0 \\
     0 & 0 & q & 0 & 0 & 0 \\

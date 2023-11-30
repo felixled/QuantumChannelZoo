@@ -22,6 +22,6 @@ isometry: |
 
 choi_state: |
   \[
-  \tau = \sum_{j=0}^{d-2} \left({\mu_{j}}^2 [0j] + [j+1, d-1] + \mu_j (|0,j\rangle \langle j+1,d-1| + |j+1,d-1\rangle \langle 0,j|)\right)
+  \tau_{AB} = \sum_{j=0}^{d-2} \left({\mu_{j}}^2 [0j] + [j+1, d-1] + \mu_j (|0,j\rangle \langle j+1,d-1| + |j+1,d-1\rangle \langle 0,j|)\right)
   \]
   where \( [\psi] \equiv |\psi\rangle \langle\psi| \).
