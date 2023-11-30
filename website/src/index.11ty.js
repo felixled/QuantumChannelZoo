@@ -44,7 +44,14 @@ const render = async function (data)
     /* Add more styles as needed */
   </style>
 
+<p class="abt">
+This is the Quantum Channel Zoo, a website collecting useful mathematical and information-theoretic facts about various quantum channels.
+It was created using the <a href="https://github.com/phfaist/zoodb" target="_blank">ZooDb</a> as the final project of an <a href="https://math.illinois.edu/research/illinois-geometry-lab" target="_blank">IGL</a> undergraduate research project conducted in the 2023 Fall term at the University of Illinois Urbana-Champaign.
+</p>
 
+<p class="abt">
+Browse the list of channels below, or use the <a href="/search">search function</a>. Make sure to visit the <a href="/about">About page</a> to find information about the mathematical conventions used on this website, and how to contribute!
+</p>
 
 <h2>List of channels</h2>`;
 
