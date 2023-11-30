@@ -4,9 +4,9 @@ person_id: dephrasure
 name: 'Dephrasure Channel'
 
 biography: |
-  The dephrasure channel is the concatenation of a dephasing channel and an erasure channel. It is defined by \[N_{p,q}(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + q \mathrm{tr}(\rho)|e\rangle \langle e|.\]~\cite{
-doi:10.1103/PhysRevLett.121.160501}
-
+  The dephrasure channel is the concatenation of a \href{/person/phase-flip}{\(Z\)-dephasing channel} \(\mathcal{Z}_p\) and a \href{/person/erasure}{qubit erasure channel} \(\mathcal{E}_q\).\cite{doi:10.1103/PhysRevLett.121.160501} 
+  It is defined for \(p,q\in[0,1]\) by \[\mathcal{N}_{p,q}(\rho) = (\mathcal{E}_q\circ\mathcal{Z}_p)(\rho) = (1-q)((1-p)\rho + pZ\rho Z) + q \operatorname{tr}(\rho)|e\rangle \langle e|,\]
+  where \(|e\rangle\) is an erasure flag state orthogonal to the input state \(\rho\).
 dimensions: |
    \( (2,3,4) \)
 

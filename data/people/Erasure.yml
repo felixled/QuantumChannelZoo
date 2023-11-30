@@ -38,4 +38,5 @@ choi_state: |
 
 relations:
   parents:
+    - person_id: dephrasure
     - person_id: erasure_ddim
