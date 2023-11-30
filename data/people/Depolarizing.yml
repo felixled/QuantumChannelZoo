@@ -23,13 +23,13 @@ kraus_operators: |
 
 isometry: |
   \begin{align*}
-   \ket{0} &\mapsto \sqrt{1-p} \ket{00} + \sqrt{\frac{p}{3}} \ket{11} + i \sqrt{\frac{p}{3}} \ket{12} +\sqrt{\frac{p}{3}} \ket{03}  \\
-   \ket{1} &\mapsto \sqrt{1-p} \ket{10} + \sqrt{\frac{p}{3}} \ket{01} - i \sqrt{\frac{p}{3}} \ket{02} - \sqrt{\frac{p}{3}} \ket{13} 
+   \ket{0}_A &\mapsto \sqrt{1-p} \ket{0}_B\ket{0}_E + \sqrt{\frac{p}{3}} \ket{1}_B\ket{1}_E + i \sqrt{\frac{p}{3}} \ket{1}_B\ket{2}_E +\sqrt{\frac{p}{3}} \ket{0}_B\ket{3}_E  \\
+   \ket{1}_A &\mapsto \sqrt{1-p} \ket{1}_B\ket{0}_E + \sqrt{\frac{p}{3}} \ket{0}_B\ket{1}_E - i \sqrt{\frac{p}{3}} \ket{0}_B\ket{2}_E - \sqrt{\frac{p}{3}} \ket{1}_B\ket{3}_E 
   \end{align*}
 
 choi_state: |
   \[
-  \tau = \begin{pmatrix}
+  \tau_{AB} = \begin{pmatrix}
       1 - \frac{2}{3}p & 0 & 0 & 1 - \frac{4}{3}p \\
       0 & \frac{2}{3}p & 0 & 0 \\
       0 & 0 & \frac{2}{3}p & 0 \\

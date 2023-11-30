@@ -24,7 +24,7 @@ isometry: |
 
 choi_state: |
   \[
-  \tau = \begin{pmatrix}
+  \tau_{AB} = \begin{pmatrix}
     p_0 + p_3 & 0 & 0 & p_0 - p_3 \\
     0 & p_1 + p_2 & p_1 - p_2 & 0 \\
     0 & p_1 - p_2 & p_1 + p_2 & 0 \\

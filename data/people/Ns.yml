@@ -25,7 +25,7 @@ isometry: |
 choi_state: |
   (0's are replaced by \( \cdot \)'s for readability)
   \[
-  \tau = \begin{pmatrix}
+  \tau_{AB} = \begin{pmatrix}
     s & \cdot & \cdot & \cdot & \cdot & \sqrt{s} & \cdot & \cdot & \cdot \\
     \cdot & 1-s & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \sqrt{1-s} \\
     \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
