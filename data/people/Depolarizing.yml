@@ -5,7 +5,7 @@ name: 'Depolarizing Channel'
 
 biography: |
   The depolarizing channel is a qubit channel defined as 
-    \[ \mathcal{D}_q(\rho) = (1-q)\rho + q \operatorname{tr}(\rho)\frac{\mathbb{1}}{2} = (1-p)\rho + \frac{p}{3} X \rho X + \frac{p}{3} Y \rho Y + \frac{p}{3} Z \rho Z, \]
+    \[ \mathcal{D}_q(\rho) = (1-q)\rho + q \operatorname{tr}(\rho)\frac{\mathbf{1}}{2} = (1-p)\rho + \frac{p}{3} X \rho X + \frac{p}{3} Y \rho Y + \frac{p}{3} Z \rho Z, \]
   where \(p\in[0,1]\) and \(q=4p/3\).
 
   It can be thought of as a model of a decohering qubit, with the qubit remaining intact with probability \(1-p\), and an "error" occurs with probability \(p\). The error can be either a bit-flip error, a phase-flip error, or both. Each error is equally likely and occurs with probability \(\frac{p}{3}\).\cite{preset:WildeQIT}
@@ -15,7 +15,7 @@ dimensions: |
 
 kraus_operators: | 
   \begin{align*}
-    K_0 &= \sqrt{1-p} \mathbb{1} \\
+    K_0 &= \sqrt{1-p} \mathbf{1} \\
     K_1 &= \sqrt{\frac{p}{3}}X \\
     K_2 &= \sqrt{\frac{p}{3}}Y \\
     K_3 &= \sqrt{\frac{p}{3}}Z

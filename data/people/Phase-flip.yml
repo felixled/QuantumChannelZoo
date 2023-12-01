@@ -11,7 +11,7 @@ dimensions: |
 
 kraus_operators: | 
   \begin{align*}
-    K_0 &= \sqrt{1-p}\mathbb{1} \\
+    K_0 &= \sqrt{1-p}\mathbf{1} \\
     K_1 &= \sqrt{p}Z 
   \end{align*}
 

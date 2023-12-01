@@ -11,7 +11,7 @@ dimensions: |
 
 kraus_operators: | 
   \begin{align*}  
-    K_0 &= \sqrt{1-p}\mathbb{1} = \begin{pmatrix} \sqrt{1-p} & 0\\ 0 & \sqrt{1-p}\end{pmatrix} \\
+    K_0 &= \sqrt{1-p}\mathbf{1} = \begin{pmatrix} \sqrt{1-p} & 0\\ 0 & \sqrt{1-p}\end{pmatrix} \\
     K_1 &= \sqrt{p} X = \begin{pmatrix} 0 & \sqrt{p} \\ \sqrt{p} & 0\end{pmatrix}
   \end{align*}    
 
