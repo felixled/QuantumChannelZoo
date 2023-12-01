@@ -15,3 +15,9 @@ WildeQIT:
   _ready_formatted:
     flm: >-
       Wilde, Mark M. Quantum Information Theory (2nd ed.). Cambridge: Cambridge University Press, 2017 (\href{https://www.cambridge.org/core/books/quantum-information-theory/247A740E156416531AA8CB97DFDAE438}{DOI}). \href{https://arxiv.org/abs/1106.1445}{arXiv:1106.1445}.
+
+
+NielsenChuang:
+  _ready_formatted:
+    flm: >-
+      Nielsen, Michael A., and Chuang, Isaac L. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010. (\href{https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE#overview}{DOI})
