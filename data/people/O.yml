@@ -4,7 +4,7 @@ person_id: platypus_o
 name: Generalized Platypus-\( \mathcal{O}\) Channel
 
 biography: |
-  The generalized qudit platypus channel is a paramtrized generalization of the \href{/person/platypus_m_d}{\(d\)-dim. platypus channel}.\cite{doi:10.1109/TIT.2023.3245985}
+  The generalized qudit platypus channel is a parametrized generalization of the \href{/person/platypus_m_d}{\(d\)-dim. platypus channel}.\cite{doi:10.1109/TIT.2023.3245985}
 
 dimensions: |
   \( (d,d,d-1) \)
