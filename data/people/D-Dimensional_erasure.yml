@@ -1,0 +1,25 @@
+
+person_id: erasure_ddim
+
+name: '\(d\)-dimensional Erasure Channel'
+
+biography: |
+  The \(d\)-dimensional erasure channel is defined for \(\epsilon\in[0,1]\) by \[ \mathcal{E}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon |e\rangle \langle e|,\]
+  where \(|e\rangle\) is an erasure flag state orthogonal to the input state \(\rho\). 
+  It can be understood as leaving a qudit unchanged with probability \( 1 - \epsilon \) and "erasing" it with probability \( \epsilon \).\cite{preset:WildeQIT,doi:10.1103/PhysRevLett.78.3217}
+
+dimensions: |
+  \( (d,d+1,d+1) \)
+
+kraus_operators: | 
+  Let \(\lbrace |i\rangle_A\rbrace_{i=1}^d\) be an orthonormal basis for \(A\), and \(\lbrace |i\rangle_B\rbrace_{i=1}^d \cup \lbrace |e\rangle_B\rbrace\) be one for \(B\).
+  \begin{align*}
+    K_0 &= \sqrt{1-\epsilon} \sum_{i=1}^d |i\rangle_B \langle i|_A\\
+    K_i &= \sqrt{\epsilon} \  |e \rangle_B \langle i |_A \quad\text{for }i=1,\dots,d.
+  \end{align*}
+
+isometry: |
+  \begin{align*}
+    |i\rangle_A &\mapsto \sqrt{1-\epsilon} |0\rangle_B |0\rangle_E + \sqrt{\epsilon} |e\rangle_B|i+1\rangle_E\quad\text{for }i=1,\dots,d.
+  \end{align*}
+

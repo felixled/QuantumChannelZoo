@@ -6,6 +6,8 @@ name: 'Phase-flip Channel'
 biography: |
   The phase-flip channel, or \(Z\)-dephasing channel, is defined by \[ \rho \mapsto (1-p)\rho + pZ\rho Z, \] with a phase flip error occurring with probability \(p\).~\cite{preset:WildeQIT}
   
+dimensions: |
+  \( (2,2,2) \)
 
 kraus_operators: | 
   \begin{align*}
@@ -21,7 +23,7 @@ isometry: |
 
 choi_state: |
   \[
-  \tau = \begin{pmatrix}
+  \tau_{AB} = \begin{pmatrix}
     1 & 0 & 0 & 1-2p \\
     0 & 0 & 0 & 0 \\
     0 & 0 & 0 & 0 \\
@@ -31,5 +33,6 @@ choi_state: |
 
 relations:
   parents:
+    - person_id: dephrasure
     - person_id: pauli
     - person_id: general-dephase

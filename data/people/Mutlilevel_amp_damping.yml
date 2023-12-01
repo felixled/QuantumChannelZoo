@@ -4,7 +4,10 @@ person_id: multilvl_amplitude_damping
 name: 'Multi-level Amplitude Damping Channel'
 
 biography: |
-  The multi-level amplitude damping channels describe the decaying of energy levels of a \(d\)-dimensional quantum system. ~\cite{doi:10.1038/s42005-021-00524-4} The minimal dimension of the environment is \(\frac{d(d-1)}{2}+1\).
+  The multi-level amplitude damping channels describe the decaying of energy levels of a \(d\)-dimensional quantum system. ~\cite{doi:10.1038/s42005-021-00524-4} The minimal dimension of the environment is \(d_E = \frac{d(d-1)}{2}+1\).
+
+dimensions: |
+  \( (d,d,d_E) \)
 
 kraus_operators: 
   \begin{align*}
@@ -18,7 +21,6 @@ kraus_operators:
 
   \end{align*}
   
-isometry: |
-  pass
+
 
 

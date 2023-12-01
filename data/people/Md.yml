@@ -4,7 +4,15 @@ person_id: platypus_m_d
 name: \(d\)-dimensional Platypus Channel
 
 biography: |
-  From~\cite{doi:10.1109/TIT.2023.3245985}, we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
+  The \(d\)-platypus channel is a qudit channel with interesting additivity and non-additivity properties.\cite{doi:10.1109/TIT.2023.3245985,doi:10.1103/PhysRevLett.130.200801}.
+  It was first defined in the form given here for qutrits by Vikesh Siddhu\cite{doi:10.1038/s41467-021-25954-0}; a unitarily equivalent channel was defined and discussed even earlier by Xin Wang et al.\cite{doi:10.1109/TIT.2018.2794391,doi:10.1109/TIT.2017.2741101}. 
+  
+  When used by itself its quantum, private and classical capacities are single-letterized despite not belonging to any of the known additivity classes.
+  The single-letter expression of the quantum capacity relies on the validity of the so-called \emph{spin alignment conjecture}.\cite{doi:10.1109/TIT.2023.3245985,doi:10.48550/arXiv.2307.06894}
+  However, when used together with other channels the quantum capacity becomes super-additive; this effect is large in magnitude when using the platypus channel together with a \href{/person/erasure_ddim}{\((d-1)\)-dimensional erasure channel}, and when both channels have large capacities themselves.\cite{doi:10.1103/PhysRevLett.130.200801}
+
+dimensions: |
+  \( (d,d,d-1) \)
 
 kraus_operators: | 
   \begin{align*}
@@ -19,7 +27,7 @@ isometry: |
 
 choi_state: |
   \[
-  \tau = \sum_{j=0}^{d-2} \left( \frac{1}{d-1} [0j] + [j+1,d-1] + \frac{1}{\sqrt{d-1}} (|0,j\rangle \langle j+1,d-1| + |j+1,d-1\rangle \langle 0,j|)\right)
+  \tau_{AB} = \sum_{j=0}^{d-2} \left( \frac{1}{d-1} [0j] + [j+1,d-1] + \frac{1}{\sqrt{d-1}} (|0,j\rangle \langle j+1,d-1| + |j+1,d-1\rangle \langle 0,j|)\right)
   \]
   where \( [\psi] \equiv |\psi\rangle \langle\psi| \).
 

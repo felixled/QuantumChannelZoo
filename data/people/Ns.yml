@@ -4,7 +4,18 @@ person_id: platypus_n_s
 name: Qutrit Platypus Channel
 
 biography: |
-  From~\cite{doi:10.1109/TIT.2023.3245985}, we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^3\) and \( \mathcal{H}_E \cong \mathbb{C}^2\)
+  The platypus channel is a qutrit channel with interesting additivity and non-additivity properties.\cite{doi:10.1109/TIT.2023.3245985,doi:10.1103/PhysRevLett.130.200801}.
+  It was first defined in the form given here by Vikesh Siddhu\cite{doi:10.1038/s41467-021-25954-0}; a unitarily equivalent channel was defined and discussed even earlier by Xin Wang et al.\cite{doi:10.1109/TIT.2018.2794391,doi:10.1109/TIT.2017.2741101}. 
+  
+  Leditzky et al.\cite{doi:10.1109/TIT.2023.3245985} described a construction of this channel via \textit{stitching} together the channel isometries of a degradable qubit channel and an antidegradable qubit channel along a common input direction while preserving orthogonality.
+  This stitching procedure is responsible for the unusual (non-)additivity properties of the channel.
+  Notably, when used by itself its quantum, private and classical capacities are single-letterized despite not belonging to any of the known additivity classes.
+  The single-letter expression of the quantum capacity relies on the validity of the so-called \emph{spin alignment conjecture}.\cite{doi:10.1109/TIT.2023.3245985,doi:10.48550/arXiv.2307.06894}
+  However, when used together with other channels the quantum capacity becomes super-additive.
+  This other channel can be chosen from well-known qubit channels such as the \href{/person/amplitude-damping}{amplitude damping channel} or the \href{/person/erasure}{qubit erasure channel}.
+
+dimensions: |
+  \( (3,3,2) \)
 
 kraus_operators: | 
   \begin{align*}
@@ -22,7 +33,7 @@ isometry: |
 choi_state: |
   (0's are replaced by \( \cdot \)'s for readability)
   \[
-  \tau = \begin{pmatrix}
+  \tau_{AB} = \begin{pmatrix}
     s & \cdot & \cdot & \cdot & \cdot & \sqrt{s} & \cdot & \cdot & \cdot \\
     \cdot & 1-s & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \sqrt{1-s} \\
     \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\

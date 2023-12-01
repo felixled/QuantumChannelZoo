@@ -57,7 +57,7 @@ const render = async (data) => {
 
 if (person.dimensions != null) {
       s += sqzhtml`
-	<p><strong>Dimensions:</strong> (input, output, minimal environment) = ${rdr(person.dimensions)}</p>`;
+	<p><strong>Channel dimensions</strong> (input, output, minimal environment): ${rdr(person.dimensions)}</p>`;
     }
 
 

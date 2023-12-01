@@ -8,6 +8,7 @@ html, body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 110%;
+    line-height: 1.5;
 }
 
 
@@ -79,6 +80,9 @@ footer {overflow: hidden;}
 	width: 40px;
 }
 
+.abt {text-align: justify; line-height: 1.5;}
+
+
 //
 // search results
 //
@@ -102,3 +106,12 @@ footer {overflow: hidden;}
 // stylesheet if you want to provide a fancier style
 @import '~/node_modules/tippy.js/dist/tippy.css';
 @import '~/node_modules/tippy.js/themes/light.css';
+
+@media only screen and (max-width: 800px) {
+	.wrapper {display: grid; grid-template-columns: auto;}
+	.image {display: flex; justify-content: center; grid-column: 1; grid-row: 1; text-align: center; margin-bottom: .5em;}
+	#platypus {width: 100%; margin: auto;}
+	.title {grid-column: 1; grid-row: 2; margin-bottom: .5em;}
+	.menu {grid-column: 1; grid-row: 3;}
+	article h1 {font-size: 150%;}
+}

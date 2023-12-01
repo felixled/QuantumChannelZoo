@@ -4,7 +4,10 @@ person_id: platypus_o
 name: Generalized Platypus-\( \mathcal{O}\) Channel
 
 biography: |
-  From~\cite{doi:10.1109/TIT.2023.3245985}, we have \( \mathcal{H}_A \cong \mathcal{H}_B \cong \mathbb{C}^d\) and \( \mathcal{H}_E \cong \mathbb{C}^{d-1}\). Let \( \mu_k \in \mathbb{C}\) with \( \sum_{k=0}^{d-2} | \mu_k |^2 = 1\).
+  The generalized qudit platypus channel is a paramtrized generalization of the \href{/person/platypus_m_d}{\(d\)-dim. platypus channel}.\cite{doi:10.1109/TIT.2023.3245985}
+
+dimensions: |
+  \( (d,d,d-1) \)
 
 kraus_operators: | 
   \begin{align*}
@@ -19,6 +22,6 @@ isometry: |
 
 choi_state: |
   \[
-  \tau = \sum_{j=0}^{d-2} \left({\mu_{j}}^2 [0j] + [j+1, d-1] + \mu_j (|0,j\rangle \langle j+1,d-1| + |j+1,d-1\rangle \langle 0,j|)\right)
+  \tau_{AB} = \sum_{j=0}^{d-2} \left({\mu_{j}}^2 [0j] + [j+1, d-1] + \mu_j (|0,j\rangle \langle j+1,d-1| + |j+1,d-1\rangle \langle 0,j|)\right)
   \]
   where \( [\psi] \equiv |\psi\rangle \langle\psi| \).
