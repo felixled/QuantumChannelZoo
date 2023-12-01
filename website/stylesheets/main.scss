@@ -37,7 +37,7 @@ article a:link {color: #3370cc;}
 article a:visited {color: #3370cc;}
 
 article h1 {margin: 0px; font-size: 2em;}
-.channel-title-wrapper {margin: 1.6rem 0px; display: flex; justify-content: space-between;}
+.channel-title-wrapper {margin: 1.6rem 0px; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .channel-title-link {
     padding: 0px 0.5rem;
     border-radius: 10px;
@@ -114,4 +114,6 @@ footer {overflow: hidden;}
 	.title {grid-column: 1; grid-row: 2; margin-bottom: .5em;}
 	.menu {grid-column: 1; grid-row: 3;}
 	article h1 {font-size: 150%;}
+	.channel-title-wrapper {flex-direction: column;}
+	.channel-title-link {width: 4em; margin-top: .5em;}
 }
