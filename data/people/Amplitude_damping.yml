@@ -4,7 +4,7 @@ person_id: amplitude-damping
 name: 'Amplitude Damping Channel'
 
 biography: |
-  The amplitude damping channel decays the excited state \( |1\rangle \) to the ground state \( |0\rangle \) with probability \( \gamma \). It is a qubit-qubit channel with qubit environment.~\cite{preset:WildeQIT}
+  The amplitude damping channel decays the excited state \( |1\rangle \) to the ground state \( |0\rangle \) with probability \( \gamma \).~\cite{preset:WildeQIT}
 
 dimensions: |
    \((2,2,2)\)

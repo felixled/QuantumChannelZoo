@@ -1,7 +1,7 @@
 
 person_id: erasure
 
-name: '(Qubit) Erasure Channel'
+name: 'Qubit Erasure Channel'
 
 biography: |
   The qubit erasure channel is defined for \(\epsilon\in[0,1]\) by \[ \mathcal{E}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon |e\rangle \langle e|,\]

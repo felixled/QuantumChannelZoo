@@ -4,7 +4,7 @@ person_id: multilvl_amplitude_damping
 name: 'Multi-level Amplitude Damping Channel'
 
 biography: |
-  The multi-level amplitude damping channels describe the decaying of energy levels of a \(d\)-dimensional quantum system.~\cite{doi:10.1038/s42005-021-00524-4}
+  The multi-level amplitude damping channels describe the decaying of energy levels of a \(d\)-dimensional quantum system.~\cite{preset:MultiLevelAmpDamp}
 
 dimensions: |
   \( (d,d,\frac{d(d-1)}{2}+1) \)

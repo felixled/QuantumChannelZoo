@@ -20,4 +20,11 @@ WildeQIT:
 NielsenChuang:
   _ready_formatted:
     flm: >-
-      Nielsen, Michael A., and Chuang, Isaac L. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010. (\href{https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE#overview}{DOI})
+      Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010. (\href{https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE#overview}{DOI})
+
+MultiLevelAmpDamp:
+  _ready_formatted:
+    flm: >-
+      Chessa, Stefano, and Vittorio Giovannetti. "Quantum capacity analysis of multi-level amplitude damping channels." Communications Physics 4, no. 1 (2021): 22. (\href{https://doi.org/10.1038/s42005-021-00524-4}{DOI}). \href{https://arxiv.org/abs/2008.00477}{arXiv:2008.00477}.
+
+
