@@ -13,7 +13,7 @@ const data = async () => {
     tags: ["allPages", "person"],
     eleventyComputed: {
       permalink: (data) =>
-        data.zoodb.zoo_object_permalink("person", data.person.person_id) +
+        data.zoodb.zoo_object_permalink("channel", data.person.person_id) +
         ".html",
       title: (data) => zooflm.render_text_standalone(data.person.name),
       person_name: (data) => zooflm.render_text_standalone(data.person.name),

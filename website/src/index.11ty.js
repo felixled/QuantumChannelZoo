@@ -68,7 +68,7 @@ Browse the list of channels below, or use the <a href="/search">search function<
 
         const person = zoodb.objects.person[person_id];
         const personHrefUrl = eleventy.hrefUrl(
-            zoodb.zoo_object_permalink('person', person_id)
+            zoodb.zoo_object_permalink('channel', person_id)
         );
         const personName = render_html_standalone(zoodb.objects.person[person_id].name);
 
