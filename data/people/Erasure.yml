@@ -20,8 +20,8 @@ kraus_operators: |
 
 isometry: |
   \begin{align*}
-    {|0 \rangle}_A &\mapsto \sqrt{1-\epsilon} \  {|0\rangle}_B \otimes {|0\rangle}_E + \sqrt{\epsilon} \  {|e\rangle}_B \otimes {|1\rangle}_E \\
-    {|1 \rangle}_A &\mapsto \sqrt{1-\epsilon} \  {|1\rangle}_B \otimes {|0\rangle}_E + \sqrt{\epsilon} \  {|e\rangle}_B \otimes {|2\rangle}_E
+    {|0 \rangle}_A &\mapsto \sqrt{1-\epsilon} \  {|0\rangle}_B  {|0\rangle}_E + \sqrt{\epsilon} \  {|e\rangle}_B  {|1\rangle}_E \\
+    {|1 \rangle}_A &\mapsto \sqrt{1-\epsilon} \  {|1\rangle}_B  {|0\rangle}_E + \sqrt{\epsilon} \  {|e\rangle}_B  {|2\rangle}_E
   \end{align*}
 
 choi_state: |

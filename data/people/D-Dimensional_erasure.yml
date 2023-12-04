@@ -12,14 +12,14 @@ dimensions: |
   \( (d,d+1,d+1) \)
 
 kraus_operators: | 
-  Let \(\lbrace |i\rangle_A\rbrace_{i=1}^d\) be an orthonormal basis for \(A\), and \(\lbrace |i\rangle_B\rbrace_{i=1}^d \cup \lbrace |e\rangle_B\rbrace\) be one for \(B\).
+  Let \(\lbrace |i\rangle_A\rbrace_{i=0}^{d-1}\) be an orthonormal basis for \(A\), and \(\lbrace |i\rangle_B\rbrace_{i=0}^{d-1} \cup \lbrace |e\rangle_B\rbrace\) be one for \(B\).
   \begin{align*}
-    K_0 &= \sqrt{1-\epsilon} \sum_{i=1}^d |i\rangle_B \langle i|_A\\
-    K_i &= \sqrt{\epsilon} \  |e \rangle_B \langle i |_A \quad\text{for }i=1,\dots,d.
+    K_0 &= \sqrt{1-\epsilon} \sum_{i=0}^{d-1} |i\rangle_B \langle i|_A\\
+    K_i &= \sqrt{\epsilon} \  |e \rangle_B \langle i |_A \quad\text{for }i=0,\dots,d-1.
   \end{align*}
 
 isometry: |
   \begin{align*}
-    |i\rangle_A &\mapsto \sqrt{1-\epsilon} |0\rangle_B |0\rangle_E + \sqrt{\epsilon} |e\rangle_B|i+1\rangle_E\quad\text{for }i=1,\dots,d.
+    |i\rangle_A &\mapsto \sqrt{1-\epsilon} |0\rangle_B |0\rangle_E + \sqrt{\epsilon} |e\rangle_B|i+1\rangle_E\quad\text{for }i=0,\dots,d-1.
   \end{align*}
 
