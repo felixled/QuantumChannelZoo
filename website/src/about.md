@@ -33,9 +33,19 @@ We will soon add mathematical and information-theoretic properties, such as whet
 We use the following mathematical conventions on this website (see <a href="https://arxiv.org/abs/1106.1445" target="_blank">Mark Wilde's textbook</a> for explanations of the notation used).
 A channel <span class="inline-math">\( \mathcal{N}\colon A\to B \)</span> maps operators on an input Hilbert space <span class="inline-math">\( \mathcal{H}_A \)</span> to operators on an output Hilbert space <span class="inline-math">\( \mathcal{H}_B \)</span>.
 Then there exists an environment space <span class="inline-math">\( \mathcal{H}_E \)</span> of dimension <span class="inline-math">\( d_E = \dim\mathcal{H}_E \)</span> such that the channel action can be written as follows:
-<span class="inline-math">\[ \mathcal{N}(X) = \sum_{i=1}^{d_E} K_i X K_i^\dagger = \operatorname{tr}_E VXV^\dagger.\]</span>
-In the above, the <strong>Kraus operators</strong> <span class="inline-math">\( K_i\colon \mathcal{H}_A \to \mathcal{H}_B\)</span> satisfy <span class="inline-math">\( \sum_{i=1}^{d_E} K_i^\dagger K_i = I_A,\)</span> where <span class="inline-math">\( I_A\)</span> denotes the identity operator on <span class="inline-math">\( \mathcal{H}_A\)</span>.
-The <strong>channel isometry</strong> <span class="inline-math">\( V\colon \mathcal{H}_A \to \mathcal{H}_B \otimes \mathcal{H}_E\)</span> satisfies <span class="inline-math">\( V^\dagger V = I_A\)</span>.
-The Choi operator <span class="inline-math">\( \tau_{AB} \)</span> of <span class="inline-math">\( \mathcal{N}\colon A\to B \)</span> is defined as <span class="inline-math">\[ \tau_{AB} = (\operatorname{id}_A\otimes \mathcal{N})(|\gamma\rangle\langle\gamma|_{AA'}),\]</span>
-where <span class="inline-math">\( |\gamma\rangle_{AA'} = (\dim\mathcal{H}_A)^{-1/2} \sum_{i=1}^{\dim\mathcal{H}_A} |i\rangle_A\otimes |i\rangle_{A'}\)</span> is an unnormalized maximally entangled state on <span class="inline-math">\( AA' \)</span> defined in terms of an orthonormal basis <span class="inline-math">\( \lbrace |i\rangle\rbrace_{i=1}^{\dim\mathcal{H}_A} \)</span> of <span class="inline-math">\( \mathcal{H}_A \)</span>. The Choi operator of a quantum channel is a positive semidefinite operator satisfying <span class="inline-math">\( \tau_A = \operatorname{tr}_B\tau_{AB} = I_A\)</span>.
+<span class="inline-math">\[ \mathcal{N}(X_A) = \sum_{i=0}^{d_E-1} K_i X_A K_i^\dagger = \operatorname{tr}_E VX_AV^\dagger = \operatorname{tr}_A\left[\tau_{AB} \left(X_A^T\otimes \mathbf{1}_B\right)\right].\]</span>
+In the above, we have used the following objects:
+<ul>
+<li>the <strong>Kraus operators</strong> <span class="inline-math">\( K_i\colon \mathcal{H}_A \to \mathcal{H}_B\)</span> satisfy <span class="inline-math">\[ \sum_{i=0}^{d_E-1} K_i^\dagger K_i = \mathbf{1}_A,\]</span> where <span class="inline-math">\( \mathbf{1}_A\)</span> denotes the identity operator on <span class="inline-math">\( \mathcal{H}_A\)</span>.
+</li>
+<li>
+The <strong>channel isometry</strong> <span class="inline-math">\( V\colon \mathcal{H}_A \to \mathcal{H}_B \otimes \mathcal{H}_E\)</span> satisfies <span class="inline-math">\( V^\dagger V = \mathbf{1}_A\)</span>.
+</li>
+<li>
+The <strong>Choi operator</strong> <span class="inline-math">\( \tau_{AB} \)</span> of <span class="inline-math">\( \mathcal{N}\colon A\to B \)</span> is defined as <span class="inline-math">\[ \tau_{AB} = (\operatorname{id}_A\otimes \mathcal{N})(|\gamma\rangle\langle\gamma|_{AA'}),\]</span>
+where <span class="inline-math">\( |\gamma\rangle_{AA'} = |A|^{-1/2} \sum_{i=0}^{|A|-1} |i\rangle_A\otimes |i\rangle_{A'}\)</span> is an unnormalized maximally entangled state on <span class="inline-math">\( AA' \)</span> defined in terms of an orthonormal basis <span class="inline-math">\( \lbrace |i\rangle_A\rbrace_{i=0}^{|A|-1} \)</span> of <span class="inline-math">\( \mathcal{H}_A \)</span>.
+Here, we used the notation <span class="inline-math">\(|A| = \dim\mathcal{H}_A\)</span>.
+The Choi operator of a quantum channel is a positive semidefinite operator satisfying <span class="inline-math">\( \tau_A = \operatorname{tr}_B\tau_{AB} = \mathbf{1}_A\)</span>.
+</li>
+</ul>
 </p>
