@@ -48,4 +48,5 @@ Here, we used the notation <span class="inline-math">\(|A| = \dim\mathcal{H}_A\)
 The Choi operator of a quantum channel is a positive semidefinite operator satisfying <span class="inline-math">\( \tau_A = \operatorname{tr}_B\tau_{AB} = \mathbf{1}_A\)</span>.
 </li>
 </ul>
+For information on how to derive these three channel representations and how to switch between them, we refer to <a href="https://arxiv.org/abs/1106.1445" target="_blank">Mark Wilde's textbook</a> or <a href="https://www.overleaf.com/read/hzjdctrykwhx" target="_blank">Felix Leditzky's lecture notes on quantum channels</a>.
 </p>
