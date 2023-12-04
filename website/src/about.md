@@ -43,7 +43,7 @@ The <strong>channel isometry</strong> <span class="inline-math">\( V\colon \math
 </li>
 <li>
 The <strong>Choi operator</strong> <span class="inline-math">\( \tau_{AB} \)</span> of <span class="inline-math">\( \mathcal{N}\colon A\to B \)</span> is defined as <span class="inline-math">\[ \tau_{AB} = (\operatorname{id}_A\otimes \mathcal{N})(|\gamma\rangle\langle\gamma|_{AA'}),\]</span>
-where <span class="inline-math">\( |\gamma\rangle_{AA'} = |A|^{-1/2} \sum_{i=0}^{|A|-1} |i\rangle_A\otimes |i\rangle_{A'}\)</span> is an unnormalized maximally entangled state on <span class="inline-math">\( AA' \)</span> defined in terms of an orthonormal basis <span class="inline-math">\( \lbrace |i\rangle_A\rbrace_{i=0}^{|A|-1} \)</span> of <span class="inline-math">\( \mathcal{H}_A \)</span>.
+where <span class="inline-math">\( |\gamma\rangle_{AA'} = \sum_{i=0}^{|A|-1} |i\rangle_A\otimes |i\rangle_{A'}\)</span> is an unnormalized maximally entangled state on <span class="inline-math">\( AA' \)</span> defined in terms of an orthonormal basis <span class="inline-math">\( \lbrace |i\rangle_A\rbrace_{i=0}^{|A|-1} \)</span> of <span class="inline-math">\( \mathcal{H}_A \)</span>.
 Here, we used the notation <span class="inline-math">\(|A| = \dim\mathcal{H}_A\)</span>.
 The Choi operator of a quantum channel is a positive semidefinite operator satisfying <span class="inline-math">\( \tau_A = \operatorname{tr}_B\tau_{AB} = \mathbf{1}_A\)</span>.
 </li>
