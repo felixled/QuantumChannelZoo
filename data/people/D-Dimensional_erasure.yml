@@ -4,7 +4,7 @@ person_id: erasure_ddim
 name: '\(d\)-dimensional Erasure Channel'
 
 biography: |
-  The \(d\)-dimensional erasure channel is defined for \(\epsilon\in[0,1]\) by \[ \mathcal{E}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon |e\rangle \langle e|,\]
+  The \(d\)-dimensional erasure channel is defined for \(\epsilon\in[0,1]\) by \[ \mathcal{E}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon \operatorname{tr}(\rho) |e\rangle \langle e|,\]
   where \(|e\rangle\) is an erasure flag state orthogonal to the input state \(\rho\). 
   It can be understood as leaving a qudit unchanged with probability \( 1 - \epsilon \) and "erasing" it with probability \( \epsilon \).\cite{preset:WildeQIT,doi:10.1103/PhysRevLett.78.3217}
 

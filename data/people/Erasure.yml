@@ -4,7 +4,7 @@ person_id: erasure
 name: 'Qubit Erasure Channel'
 
 biography: |
-  The qubit erasure channel is defined for \(\epsilon\in[0,1]\) by \[ \mathcal{E}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon |e\rangle \langle e|,\]
+  The qubit erasure channel is defined for \(\epsilon\in[0,1]\) by \[ \mathcal{E}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon \operatorname{tr}(\rho)|e\rangle \langle e|,\]
   where \(|e\rangle\) is an erasure flag state orthogonal to the input state \(\rho\). 
   It can be understood as leaving a qubit unchanged with probability \( 1 - \epsilon \) and "erasing" it with probability \( \epsilon \).\cite{preset:WildeQIT,doi:10.1103/PhysRevLett.78.3217}
 
@@ -15,7 +15,7 @@ kraus_operators: |
   \begin{align*}
     K_0 &= \sqrt{1-\epsilon} \  (|0 \rangle \langle 0 | + |1 \rangle \langle 1 |) = \sqrt{1-\epsilon} \begin{pmatrix} 1 & 0\\0 & 1\\0&0\end{pmatrix} \\
     K_1 &= \sqrt{\epsilon} \  |e \rangle \langle 0 | = \sqrt{\epsilon}\begin{pmatrix}0 & 0\\0 & 0\\1 & 0	\end{pmatrix} \\
-    K_2 &= \sqrt{\epsilon} \  |e \rangle \langle 1 | = \sqrt{p}\begin{pmatrix}0 & 0\\0 & 0\\ 0 & 1	\end{pmatrix}
+    K_2 &= \sqrt{\epsilon} \  |e \rangle \langle 1 | = \sqrt{\epsilon}\begin{pmatrix}0 & 0\\0 & 0\\ 0 & 1	\end{pmatrix}
   \end{align*}
 
 isometry: |
