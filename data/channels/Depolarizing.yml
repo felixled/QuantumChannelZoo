@@ -1,5 +1,5 @@
 
-person_id: depolarizing
+channel_id: depolarizing
 
 name: 'Depolarizing Channel'
 
@@ -41,5 +41,5 @@ wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'
 
 relations:
   parents:
-    - person_id: high_dim_depolar
-    - person_id: pauli
+    - channel_id: high_dim_depolar
+    - channel_id: pauli

@@ -1,5 +1,5 @@
 
-person_id: erasure
+channel_id: erasure
 
 name: 'Qubit Erasure Channel'
 
@@ -38,5 +38,5 @@ choi_state: |
 
 relations:
   parents:
-    - person_id: dephrasure
-    - person_id: erasure_ddim
+    - channel_id: dephrasure
+    - channel_id: erasure_ddim

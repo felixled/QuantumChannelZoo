@@ -2,27 +2,27 @@ $schema: "http://json-schema.org/draft-06/schema"
 
 type: object
 additionalProperties: false
-required: ['person_id', 'name', 'biography']
+required: ['channel_id', 'name', 'biography']
 
-_zoo_primarykey: 'person_id'
+_zoo_primarykey: 'channel_id'
 
 _zoo_relations:
   - object_field: 'relations.parents'
-    to_object_type: 'person'
-    relation_primary_key_field: 'person_id'
-    relation_add_object_field: 'person'
+    to_object_type: 'channel'
+    relation_primary_key_field: 'channel_id'
+    relation_add_object_field: 'channel'
     backreference:
       field: 'relations.children'
 
   - object_field: 'relations.friends'
-    to_object_type: 'person'
-    relation_primary_key_field: 'person_id'
-    relation_add_object_field: 'person'
+    to_object_type: 'channel'
+    relation_primary_key_field: 'channel_id'
+    relation_add_object_field: 'channel'
     backreference:
       field: 'relations.friend_of'
 
   - object_field: 'relations.spouse'
-    to_object_type: 'person'
+    to_object_type: 'channel'
     relation_primary_key_field: true # true === value of 'spouse' is directly the person ID
     allow_null: true # a person might not have a spouse
     backreference: null # Both spouses must declare each other as spouse, no
@@ -32,7 +32,7 @@ _zoo_relations:
 properties:
 
   # every person entry must have a unique id which will never change.
-  person_id:
+  channel_id:
     type: string
     pattern: '^[a-z0-9_.-]+$'
     _single_line_string: true
@@ -52,7 +52,7 @@ properties:
     type: string
     _flm: full
     _description: >-
-      A short biography of this person.
+      A short biography of this channel.
 
   kraus_operators:
     type: string
@@ -97,14 +97,14 @@ properties:
         type: array
         items:
           type: object
-          required: ['person_id']
+          required: ['channel_id']
           additionalProperties: false
           properties:
-            person_id:
+            channel_id:
               _single_line_string: true
               type: string
 
-            person:
+            channel:
               _auto_populated: true
 
       spouse:
@@ -116,14 +116,14 @@ properties:
         type: array
         items:
           type: object
-          required: ['person_id']
+          required: ['channel_id']
           additionalProperties: false
           properties:
-            person_id:
+            channel_id:
               _single_line_string: true
               type: string
 
-            person:
+            channel:
               _auto_populated: true
 
             friend_detail:
@@ -149,5 +149,5 @@ properties:
             friend_detail:
               _flm: full
             # (we also have further autopopulated relation object fields
-            # including 'person_id', no need to specify them here)
+            # including 'channel_id', no need to specify them here)
         

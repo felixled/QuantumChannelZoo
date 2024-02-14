@@ -55,14 +55,14 @@ export class MyZooDb extends ZooDb
     //
     async validate()
     {
-        for (const [person_id, person] of Object.entries(this.objects.person)) {
-            if (person.relations != null && person.relations.spouse != null) {
+        for (const [channel_id, channel] of Object.entries(this.objects.channel)) {
+            if (channel.relations != null && channel.relations.spouse != null) {
                 // remember, person.relations.spouse is the ID of the spouse
                 // person, not the person object itself
-                const other_person = this.objects.person[person.relations.spouse];
-                if (other_person?.relations?.spouse !== person_id) {
+                const other_person = this.objects.channel[channel.relations.spouse];
+                if (other_person?.relations?.spouse !== channel_id) {
                     throw new Error(
-                        `Person ‘${person_id}’ lists ‘${person.relations.spouse}’ as their `
+                        `Person ‘${channel_id}’ lists ‘${channel.relations.spouse}’ as their `
                         + `spouse but not the other way around`
                     );
                 }
@@ -94,8 +94,8 @@ export async function createMyZooDb(config = {}, { schema_root }={})
             flm_options: {
 
                 refs:  {
-                    person: {
-                        formatted_ref_flm_text_fn: (person_id, person) => person.name,
+                    channel: {
+                        formatted_ref_flm_text_fn: (channel_id, channel) => channel.name,
                     },
                 },
 
@@ -127,7 +127,7 @@ export async function createMyZooDb(config = {}, { schema_root }={})
             },
 
             searchable_text_options: {
-                object_types: ['person',]  // which DB object types to search
+                object_types: ['channel',]  // which DB object types to search
             },
 
             zoo_permalinks: permalinks,
@@ -168,9 +168,9 @@ export async function createMyYamlDbDataLoader(zoodb)
         // specify objects & where to find them
         //
         objects: {
-            person: {
-                schema_name: 'person',
-                data_src_path: 'people/',
+            channel: {
+                schema_name: 'channel',
+                data_src_path: 'channels/',
             },
         },
 

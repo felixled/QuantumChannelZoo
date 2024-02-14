@@ -3,24 +3,24 @@ const data = async () => {
 
   return {
     pagination: {
-      data: "zoodb.objects.person",
+      data: "zoodb.objects.channel",
       size: 1,
       resolve: "values",
       addAllPagesToCollections: true,
-      alias: "person",
+      alias: "channel",
     },
     date: "2000-01-01", // should be ignored
-    tags: ["allPages", "person"],
+    tags: ["allPages", "channel"],
     eleventyComputed: {
       permalink: (data) =>
-        data.zoodb.zoo_object_permalink("channel", data.person.person_id) +
+        data.zoodb.zoo_object_permalink("channel", data.channel.channel_id) +
         ".html",
-      title: (data) => zooflm.render_text_standalone(data.person.name),
-      person_name: (data) => zooflm.render_text_standalone(data.person.name),
+      title: (data) => zooflm.render_text_standalone(data.channel.name),
+      channel_name: (data) => zooflm.render_text_standalone(data.channel.name),
       date: (data) => {
         // injection hack to get correct page date property!
         // https://github.com/11ty/eleventy/issues/2199#issuecomment-1027362151
-        data.page.date = new Date(data.person._zoodb.git_last_modified_date);
+        data.page.date = new Date(data.channel._zoodb.git_last_modified_date);
         return data.page.date;
       },
     },
@@ -28,7 +28,7 @@ const data = async () => {
 };
 
 const render = async (data) => {
-  const { person, zoodb } = data;
+  const { channel, zoodb } = data;
 
   const zoo_flm_environment = zoodb.zoo_flm_environment;
 
@@ -45,50 +45,54 @@ const render = async (data) => {
     s += sqzhtml`
 <article>
 <div class="channel-title-wrapper">
-<h1>${rdr(person.name)}</h1>
-<a class="channel-title-link" style="${person.wiki_link ? '' : 'display: none'}"
-  href="${person.wiki_link ? rdr(person.wiki_link) : ''}" target="_blank">
+<h1>${rdr(channel.name)}</h1>
+<a class="channel-title-link" style="${channel.wiki_link ? '' : 'display: none'}"
+  href="${channel.wiki_link ? rdr(channel.wiki_link) : ''}" target="_blank">
 <i class="fa-solid fa-link"></i>
 <span>Wiki</span>
 </a>
 </div>
+<hr>
 <h2>Description</h2>
-<div style="margin: 1.5rem 0px">${rdrblock(person.biography)}</div>`;
+<div style="margin: 1.5rem 0px">${rdrblock(channel.biography)}</div>
+<hr>`;
 
-if (person.dimensions != null) {
+if (channel.dimensions != null) {
       s += sqzhtml`
-	<p><strong>Channel dimensions</strong> (input, output, minimal environment): ${rdr(person.dimensions)}</p>`;
+	<p><strong>Channel dimensions</strong> (input, output, minimal environment): ${rdr(channel.dimensions)}</p>
+  <hr>`;
     }
 
 
     
-    if (person.kraus_operators != null || person.isometry != null || person.choi_state != null) {
+    if (channel.kraus_operators != null || channel.isometry != null || channel.choi_state != null) {
 	s += sqzhtml`
 	<h2>Representations</h2>`;
     }
 
     // add Kraus Operators
-    if (person.kraus_operators != null) {
+    if (channel.kraus_operators != null) {
       s += sqzhtml`
         <h3>Kraus Operators</h3>
-        <div>${rdrblock(person.kraus_operators)}</div>`;
+        <div>${rdrblock(channel.kraus_operators)}</div>`;
     }
 
     // add isometry
-    if (person.isometry != null) {
+    if (channel.isometry != null) {
       s += sqzhtml`
         <h3>Isometry</h3>
-        <div>${rdrblock(person.isometry)}</div>`;
+        <div>${rdrblock(channel.isometry)}</div>`;
     }
 
     // add chio state
-    if (person.choi_state != null) {
+    if (channel.choi_state != null) {
       s += sqzhtml`
           <h3>Choi State</h3>
-          <div>${rdrblock(person.choi_state)}</div>`;
+          <div>${rdrblock(channel.choi_state)}</div>
+          <hr>`;
     }
 
-    const relations = person.relations ?? {};
+    const relations = channel.relations ?? {};
 
     if (relations.spouse != null) {
       s += sqzhtml`
@@ -96,7 +100,7 @@ if (person.dimensions != null) {
 
 
 <h2>Spouse</h2>
-<p>${ref("person", relations.spouse)}</p>`;
+<p>${ref("channel", relations.spouse)}</p>`;
     }
 
     if (relations.parents != null && relations.parents.length) {
@@ -105,7 +109,7 @@ if (person.dimensions != null) {
 <ul>`;
       for (const parent_relation of relations.parents) {
         s += sqzhtml`
-    <li>${ref("person", parent_relation.person_id)}</li>
+    <li>${ref("channel", parent_relation.channel_id)}</li>
   `;
       }
       s += sqzhtml`
@@ -119,7 +123,7 @@ if (person.dimensions != null) {
 <ul>`;
       for (const child_relation of relations.children) {
         s += sqzhtml`
-    <li><p>${ref("person", child_relation.person_id)}</p></li>
+    <li><p>${ref("channel", child_relation.channel_id)}</p></li>
   `;
       }
       s += sqzhtml`
@@ -143,16 +147,16 @@ if (person.dimensions != null) {
         }
 
         s += sqzhtml`
-    <li>${ref("person", friend_relation.person_id)}${friend_detail_text}</li>`;
+    <li>${ref("channel", friend_relation.channel_id)}${friend_detail_text}</li>`;
       }
-      s += sqzhtml`
+      s += sqzhtml`<hr>
 </ul>
 `;
     }
 
     s += sqzhtml`
 
-
+<hr>
 <RENDER_ENDNOTES/>
 
 <p class="last-edit">Last modified: ${data.page.date.toString()}</p>

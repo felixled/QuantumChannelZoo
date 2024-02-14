@@ -1,5 +1,5 @@
 
-person_id: bit-flip
+channel_id: bit-flip
 
 name: 'Bit-flip Channel'
 
@@ -34,5 +34,5 @@ choi_state: |
 
 relations:
   parents:
-    - person_id: pauli
-    - person_id: general-dephase
+    - channel_id: pauli
+    - channel_id: general-dephase

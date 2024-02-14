@@ -1,5 +1,5 @@
 
-person_id: phase-flip
+channel_id: phase-flip
 
 name: 'Phase-flip Channel'
 
@@ -33,6 +33,6 @@ choi_state: |
 
 relations:
   parents:
-    - person_id: dephrasure
-    - person_id: pauli
-    - person_id: general-dephase
+    - channel_id: dephrasure
+    - channel_id: pauli
+    - channel_id: general-dephase

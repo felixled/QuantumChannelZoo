@@ -58,22 +58,22 @@ Browse the list of channels below, or use the <a href="/search">search function<
     content += `
 <ul>`;
 
-    const person_id_list = [ ...Object.keys(zoodb.objects.person) ];
-    person_id_list.sort();
+    const channel_id_list = [ ...Object.keys(zoodb.objects.channel) ];
+    channel_id_list.sort();
 
-    for (const person_id of person_id_list) {
-        // If we'd like to render other properties of `person`, especial FLM
+    for (const channel_id of channel_id_list) {
+        // If we'd like to render other properties of `channel`, especial FLM
         // content that is not marked as standalone-mode compatible, we should
         // use `zooflm.make_and_render_document` with a render callback.
 
-        const person = zoodb.objects.person[person_id];
-        const personHrefUrl = eleventy.hrefUrl(
-            zoodb.zoo_object_permalink('channel', person_id)
+        const channel = zoodb.objects.channel[channel_id];
+        const channelHrefUrl = eleventy.hrefUrl(
+            zoodb.zoo_object_permalink('channel', channel_id)
         );
-        const personName = render_html_standalone(zoodb.objects.person[person_id].name);
+        const channelName = render_html_standalone(zoodb.objects.channel[channel_id].name);
 
         content += `
-<li><a href="${ personHrefUrl }">${ personName }</a></li>
+<li><a href="${ channelHrefUrl }">${ channelName }</a></li>
 `;
     }
 

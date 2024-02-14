@@ -1,5 +1,5 @@
 
-person_id: platypus_m_d
+channel_id: platypus_m_d
 
 name: \(d\)-dimensional Platypus Channel
 
@@ -33,4 +33,4 @@ choi_state: |
 
 relations:
   parents: 
-    - person_id: platypus_o
+    - channel_id: platypus_o

@@ -1,5 +1,5 @@
 
-person_id: erasure_ddim
+channel_id: erasure_ddim
 
 name: '\(d\)-dimensional Erasure Channel'
 
