@@ -70,7 +70,7 @@ properties:
     type: string
     _flm: full
     _description: >-
-      Describe choi state for the channel.
+      Describe Choi state for the channel.
 
   dimensions:
     type: string
@@ -84,6 +84,24 @@ properties:
     _single_line_string: true
     _description: >-
       A link to the channel's Wikipedia page.
+
+  quantum_capacity:
+    type: string
+    _flm: full
+    _description: >-
+      Describe what is known about the quantum capacity for the channel.
+
+  private_capacity:
+    type: string
+    _flm: full
+    _description: >-
+      Describe what is known about the private capacity for the channel.
+
+  classical_capacity:
+    type: string
+    _flm: full
+    _description: >-
+      Describe what is known about the classical capacity for the channel.
 
   #
   # Relations:
