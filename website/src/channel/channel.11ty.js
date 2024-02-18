@@ -84,13 +84,39 @@ if (channel.dimensions != null) {
         <div>${rdrblock(channel.isometry)}</div>`;
     }
 
-    // add chio state
+    // add Choi state
     if (channel.choi_state != null) {
       s += sqzhtml`
           <h3>Choi State</h3>
           <div>${rdrblock(channel.choi_state)}</div>
-          <hr>`;
+          `;
     }
+
+    if (channel.quantum_capacity != null || channel.private_capacity != null || channel.classical_capacity != null) {
+      s += sqzhtml`<hr>
+      <h2>Capacities</h2>`;
+        }
+  
+        // add quantum capacity
+        if (channel.quantum_capacity != null) {
+          s += sqzhtml`
+            <h3>Quantum Capacity</h3>
+            <div>${rdrblock(channel.quantum_capacity)}</div>`;
+        }
+  
+        // add private capacity
+        if (channel.private_capacity != null) {
+          s += sqzhtml`
+            <h3>Private capacity</h3>
+            <div>${rdrblock(channel.private_capacity)}</div>`;
+        }
+  
+        // add classical capacity
+        if (channel.classical_capacity != null) {
+          s += sqzhtml`
+              <h3>Classical capacity</h3>
+              <div>${rdrblock(channel.classical_capacity)}</div>`;
+        }
 
     const relations = channel.relations ?? {};
 
@@ -98,13 +124,14 @@ if (channel.dimensions != null) {
       s += sqzhtml`
 
 
-
+<hr>
 <h2>Spouse</h2>
 <p>${ref("channel", relations.spouse)}</p>`;
     }
 
     if (relations.parents != null && relations.parents.length) {
       s += sqzhtml`
+      <hr>
 <h2>Parents</h2>
 <ul>`;
       for (const parent_relation of relations.parents) {
@@ -118,7 +145,7 @@ if (channel.dimensions != null) {
     }
 
     if (relations.children != null && relations.children.length) {
-      s += sqzhtml`
+      s += sqzhtml`<hr>
 <h2>Children</h2>
 <ul>`;
       for (const child_relation of relations.children) {
