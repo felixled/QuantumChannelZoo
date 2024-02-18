@@ -36,6 +36,13 @@ choi_state: |
   \end{pmatrix}
   \]
 
+quantum_capacity: |
+  The quantum capacity of the erasure channel is \(1-2\epsilon\) for \(0 \leq \epsilon \leq \frac{1}{2}\) and \(0\) otherwise.
+
+classical_capacity: |
+  The classical capacity of the erasure channel is \(1-\epsilon \).
+
+
 relations:
   parents:
     - channel_id: dephrasure

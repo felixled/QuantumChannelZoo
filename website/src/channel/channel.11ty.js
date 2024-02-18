@@ -107,14 +107,14 @@ if (channel.dimensions != null) {
         // add private capacity
         if (channel.private_capacity != null) {
           s += sqzhtml`
-            <h3>Private capacity</h3>
+            <h3>Private Capacity</h3>
             <div>${rdrblock(channel.private_capacity)}</div>`;
         }
   
         // add classical capacity
         if (channel.classical_capacity != null) {
           s += sqzhtml`
-              <h3>Classical capacity</h3>
+              <h3>Classical Capacity</h3>
               <div>${rdrblock(channel.classical_capacity)}</div>`;
         }
 

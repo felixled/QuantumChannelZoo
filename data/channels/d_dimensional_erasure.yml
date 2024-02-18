@@ -23,6 +23,9 @@ isometry: |
     |i\rangle_A &\mapsto \sqrt{1-\epsilon} |0\rangle_B |0\rangle_E + \sqrt{\epsilon} |e\rangle_B|i+1\rangle_E\quad\text{for }i=0,\dots,d-1.
   \end{align*}
 
+quantum_capacity: |
+  The quantum capacity of the \(d\)-dimensional erasure channel is \((1-2\epsilon) \log d \) for \(0 \leq \epsilon \leq \frac{1}{2}\) and \(0\) otherwise.
+
 classical_capacity: |
   The classical capacity of the \(d\)-dimensional erasure channel is given by \((1-\epsilon) \log d \).
 

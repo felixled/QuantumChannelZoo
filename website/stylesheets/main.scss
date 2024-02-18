@@ -12,7 +12,7 @@
 
 /* Base font and background */
 html {
-    font-size: 100%; 
+    font-size: 90%; 
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     background-color: #F7F7F7; 
     color: #424242; 
     line-height: 1.6;
-    max-width: 800px; 
+    max-width: 700px; 
     margin: 0 auto;
     padding: 20px; 
 }
@@ -144,6 +144,9 @@ hr {
     margin-bottom: 20px;
 }
 
+.last-edit {
+    font-size: 0.75rem; 
+}
 
 .channel-title-link {
     background-color: #EEEEEE;
