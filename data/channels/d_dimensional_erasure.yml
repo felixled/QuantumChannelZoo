@@ -1,7 +1,7 @@
 
 channel_id: erasure_ddim
 
-name: '\(d\)-dimensional Erasure Channel'
+name: 'Qudit Erasure Channel'
 
 biography: |
   The \(d\)-dimensional erasure channel is defined for \(\epsilon\in[0,1]\) by \[ \mathcal{E}_{\epsilon}(\rho) = (1-\epsilon)\rho + \epsilon \operatorname{tr}(\rho) |e\rangle \langle e|,\]
@@ -24,10 +24,10 @@ isometry: |
   \end{align*}
 
 quantum_capacity: |
-  The quantum capacity of the \(d\)-dimensional erasure channel is \((1-2\epsilon) \log d \) for \(0 \leq \epsilon \leq \frac{1}{2}\) and \(0\) otherwise.
+  The quantum capacity of the qudit erasure channel is \((1-2\epsilon) \log d \) for \(0 \leq \epsilon \leq \frac{1}{2}\) and \(0\) otherwise.
 
 classical_capacity: |
-  The classical capacity of the \(d\)-dimensional erasure channel is given by \((1-\epsilon) \log d \).
+  The classical capacity of the qudit erasure channel is given by \((1-\epsilon) \log d \).
 
 
 

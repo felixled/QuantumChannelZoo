@@ -39,6 +39,9 @@ choi_state: |
 
 wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'
 
+classical_capacity: |
+  The classical capacity of the depolarizing channel is \(1+ (1-\frac{p}{2})\log(1-\frac{p}{2}) + \frac{p}{2} \log(\frac{p}{2}) \).
+
 relations:
   parents:
     - channel_id: high_dim_depolar
