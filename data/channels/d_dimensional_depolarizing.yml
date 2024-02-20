@@ -3,7 +3,7 @@ channel_id: high_dim_depolar
 name: "Qudit Depolarizing Channel"
 
 biography: |
-  For \(q\in[0,d^2/(d^2-1)]\) and \(\rho\in\mathcal{L}(\mathbb{C}^d)\), \[\mathcal{D}_{q,d}(\rho) = (1-q)\rho + \mathrm{tr}(\rho) \frac{1}{d} \mathbf{1}.\]
+  For \(q\in[0,d^2/(d^2-1)]\) and \(\rho\in\mathcal{L}(\mathbb{C}^d)\), \[\mathcal{D}_{q,d}(\rho) = (1-q)\rho + \mathrm{tr}(\rho) q \frac{1}{d} \mathbf{1}.\]
 
 
 dimensions: |
@@ -12,4 +12,4 @@ dimensions: |
 wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'
 
 classical_capacity: |
-  The classical capacity of the qudit depolarizing channel is \[\log d+ (1-p+\frac{p}{d})\log(1-p+\frac{p}{d}) + (d-1)\frac{p}{d} \log(\frac{p}{d}).\]
+  The classical capacity of the qudit depolarizing channel is \[\log d+ (1-q+\frac{q}{d})\log(1-q+\frac{q}{d}) + (d-1)\frac{q}{d} \log(\frac{q}{d}).\]
