@@ -25,7 +25,7 @@ We will soon add mathematical and information-theoretic properties, such as whet
 We use the following mathematical conventions on this website (see <a href="https://arxiv.org/abs/1106.1445" target="_blank">Mark Wilde's textbook</a> for explanations of the notation used).
 A channel $\mathcal{N}\colon A\to B$ maps operators on an input Hilbert space $\mathcal{H}_A$ to operators on an output Hilbert space $\mathcal{H}_B$.
 Then there exists an environment space $\mathcal{H}_E$ of dimension $d_E = \dim\mathcal{H}_E$ such that the channel action can be written as follows:
-$ \mathcal{N}(X_A) = \sum_{i=0}^{d_E-1} K_i X_A K_i^\dagger = \operatorname{tr}_E VX_AV^\dagger = \operatorname{tr}_A\left[\tau_{AB} \left(X_A^T\otimes \mathbf{1}_B\right)\right].$
+$ \mathcal{N}(X_A) = \sum_{i=0}^{d_E-1} K_i X_A K_i^\dagger = \text{tr}_E VX_AV^\dagger = \text{tr}_A\left[\tau_{AB} \left(X_A^T\otimes \mathbf{1}_B\right)\right].$
 In the above, we have used the following objects:
 <ul>
 <li>the <strong>Kraus operators</strong> $K_i\colon \mathcal{H}_A \to \mathcal{H}_B$ satisfy $\sum_{i=0}^{d_E-1} K_i^\dagger K_i = \mathbf{1}_A,$ where $\mathbf{1}_A$ denotes the identity operator on $\mathcal{H}_A$.
@@ -34,10 +34,10 @@ In the above, we have used the following objects:
 The <strong>channel isometry</strong> $V\colon \mathcal{H}_A \to \mathcal{H}_B \otimes \mathcal{H}_E$ satisfies $V^\dagger V = \mathbf{1}_A$.
 </li>
 <li>
-The <strong>Choi operator</strong> $\tau_{AB}$ of $\mathcal{N}\colon A\to B$ is defined as $\[ \tau_{AB} = (\operatorname{id}_A\otimes \mathcal{N})(|\gamma\rangle\langle\gamma|_{AA'}),\]</span>
+The <strong>Choi operator</strong> $\tau_{AB}$ of $\mathcal{N}\colon A\to B$ is defined as $ \tau_{AB} = (\text{id}_A\otimes \mathcal{N})(|\gamma\rangle\langle\gamma|_{AA'}),</span>
 where $|\gamma\rangle_{AA'} = \sum_{i=0}^{|A|-1} |i\rangle_A\otimes |i\rangle_{A'}$ is an unnormalized maximally entangled state on  $AA'$ defined in terms of an orthonormal basis $\lbrace |i\rangle_A\rbrace_{i=0}^{|A|-1}$ of $\mathcal{H}_A $.
 Here, we used the notation $|A| = \dim\mathcal{H}_A$.
-The Choi operator of a quantum channel is a positive semidefinite operator satisfying $\tau_A = \operatorname{tr}_B\tau_{AB} = \mathbf{1}_A$.
+The Choi operator of a quantum channel is a positive semidefinite operator satisfying $\tau_A = \text{tr}_B\tau_{AB} = \mathbf{1}_A$.
 </li>
 </ul>
 For information on how to derive these three channel representations and how to switch between them, we refer to <a href="https://arxiv.org/abs/1106.1445" target="_blank">Mark Wilde's textbook</a> or <a href="https://www.overleaf.com/read/hzjdctrykwhx" target="_blank">Felix Leditzky's lecture notes on quantum channels</a>.
