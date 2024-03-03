@@ -1,0 +1,10 @@
+
+channel_id: rocket
+name: Rocket Channel
+
+biography: |
+  The rocket channel, or the random phase coupling channel, was introduced by Smith and Smolin \cite{doi:10.1103/PhysRevLett.103.120503} as an example of channels that display additivity violations of the private capacity proportional to input size. The channel takes two \(d\)-dimensional inputs \(A_1\) and \(A_2\). Let \(U\) and \(V\) be two local random unitaries applied to these inputs. Define a map from \(A_1 A_2\) to \(BE\) by \(W_{UV} = P U \otimes V\), where \(P = \sum_{i,j} \omega^{ij}\ket{i}\bra{i}_{A_1} \otimes \ket{j}\bra{j}_{A_2}\) and \(\omega\) is a primitive \(d\)-th primitive root of unity. Let \[\mathcal{R}_{UV}(\rho) = \operatorname{tr}_E W_{UV} \rho W_{UV}^{\dagger}.\] The rocket channel is then defined to be \[R_d(\rho) = \mathbb{E}_{UV} \mathcal{R}_{UV}(\rho) \otimes \ket{U}\bra{U} \otimes \ket{V}\bra{V}.\]
+
+  If the unitaries \(U\) and \(V\) are chosen uniformly at random from a \(2\)-design, the output of the channel is finite-dimensional.
+
+
