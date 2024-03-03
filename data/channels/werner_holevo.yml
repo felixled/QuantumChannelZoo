@@ -1,0 +1,22 @@
+
+channel_id: werner-holevo
+
+name: 'Werner-Holevo Channel'
+
+wiki_link: 'https://en.wikipedia.org/wiki/Werner_state#Werner-Holevo_channels'
+
+biography: |
+  A Werner-Holevo channel \(\mathcal{W}^{\left(
+  p,d\right)  }\) with parameters \(p\in\left[  0,1\right]  \) and \(d\) an integer larger than \(2\),
+  is defined as \[\mathcal{W}_{}^{\left(  p,d\right)  } = p
+  \mathcal{W}_{}^{\text{sym}  }+\left(  1-p\right)\mathcal{W}_{}^{\text{as}  },\] where the quantum channels \(\mathcal{W}_{}^{\text{sym}  }\) and \(\mathcal{W}_{}^{\text{as}  }\) are defined by: \[\mathcal{W}_{}^{\text{sym}  }(\rho)   =
+  \frac{1}{d+1}\left[\operatorname{tr}(\rho)I+
+  {\rho}^T\right],\] \[\mathcal{W}_{}^{\text{as}  }(\rho)   =
+  \frac{1}{d-1}\left[\operatorname{tr}(\rho)I-
+  {\rho}^T\right],\] where \(\rho \in \mathcal{L}(\mathbb{C}^d)\),  \(T\) denotes the transpose, and \(I\) is the \(d \times d\) identity matrix.
+
+
+choi_state: |
+  The Choi state of a Werner-Holevo channel is a Werner state.
+
+

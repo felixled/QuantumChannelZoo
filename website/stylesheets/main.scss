@@ -144,6 +144,14 @@ hr {
     margin-bottom: 20px;
 }
 
+.channel-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
 .last-edit {
     font-size: 0.75rem; 
 }
@@ -153,7 +161,6 @@ hr {
     padding: 5px 15px; 
     border-radius: 15px; 
     border: none;
-    margin: 5px 0;
     display: inline-flex; 
     align-items: center; 
 }
