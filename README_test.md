@@ -35,7 +35,7 @@ The <strong>channel isometry</strong> $V\colon \mathcal{H}_A \to \mathcal{H}_B \
 </li>
 <li>
 The <strong>Choi operator</strong> $\tau_{AB}$ of $\mathcal{N}\colon A\to B$ is defined as $$\tau_{AB} = (\text{id}_A\otimes \mathcal{N})(|\gamma\rangle\langle\gamma|_{AA'}),$$
-where $|\gamma\rangle_{AA'} = \sum_{i=0}^{|A|-1} |i\rangle_A\otimes |i\rangle_{A'}$ is an unnormalized maximally entangled state on  $AA'$ defined in terms of an orthonormal basis $\lbrace |i\rangle_A\rbrace_{i=0}^{|A|-1}$ of $\mathcal{H}_A $.
+where $$|\gamma\rangle_{AA'} = \sum_{i=0}^{|A|-1} |i\rangle_A\otimes |i\rangle_{A'}$$ is an unnormalized maximally entangled state on  $AA'$ defined in terms of an orthonormal basis $\lbrace |i\rangle_A\rbrace_{i=0}^{|A|-1}$ of $\mathcal{H}_A $.
 Here, we used the notation $|A| = \dim\mathcal{H}_A$.
 The Choi operator of a quantum channel is a positive semidefinite operator satisfying $\tau_A = \text{tr}_B\tau_{AB} = \mathbf{1}_A$.
 </li>
