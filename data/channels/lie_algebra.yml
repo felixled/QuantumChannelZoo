@@ -3,11 +3,15 @@ channel_id: lie-algebra
 name: 'Lie algebra channel'
 
 biography: |
-  Let \(\mathfrak{g}\) be a semisimple Lie algebra of dimension \(k\) with basis \(\{X_i\}_{i=1}^{k}\). Let \((\alpha, \mathcal{H})\) be an irreducible representation of \(\mathfrak{g}\). A Lie algebra channel \cite{doi:10.1063/1.1945768} is then given by 
-  \[\mathcal{E}(\rho) = (1-p) \rho + \frac{p}{Z} \sum_{i=1}^{k}\alpha(X_i) \: \rho \: \alpha(X_i),\] where \(Z\) is a normalization constant.
+  Let \(\mathfrak{g}\) be a semisimple Lie algebra of dimension \(k\) with basis \(\{X_i\}_{i=1}^{k}\). Let \((\alpha, \mathcal{H})\) be an irreducible representation of \(\mathfrak{g}\) of dimension \(d\). A Lie algebra channel \cite{doi:10.1063/1.1945768} is then given by 
+  \[\mathcal{E}(\rho) = (1-p) \rho + \frac{p}{Z} \sum_{i=1}^{k}\alpha(X_i) \: \rho \: \alpha(X_i),\] where \(Z\) is a normalization constant and \(p \in [0,1]\).
 
-  For the defining representation of \(\mathfrak{g} = \mathfrak{su}(d)\), this definition gives the \ref{channel:high_dim_depolar} channel.
+  One can interpret this definition as a generalization of the depolarizing channel, with an input qudit remaining intact with probability \(1-p\), and an error occurring with probability \(p\), with each of the errors \(\{\alpha(X_i)\}_{i=1}^{k}\) being equally likely.
 
+  For the defining representation of the Lie algebra \(\mathfrak{su}(d)\), this definition gives the \hyperref[channel:high_dim_depolar]{qudit depolarizing channel}.
+
+dimensions: |
+  \((d,d,k+1)\)
 kraus_operators: |
   \begin{align*}
   K_0 &= (1-p) \mathbf{1} \\

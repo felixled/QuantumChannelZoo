@@ -11,6 +11,11 @@ dimensions: |
 
 wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'
 
+choi_state: |
+  \[\tau_{AB} = \frac{p}{d} \mathbf{I} + (1-p) \ket{\gamma}\bra{\gamma} \]
+
+  where \( |\gamma\rangle_{AA'} = \sum_{i=0}^{|A|-1} |i\rangle_A\otimes |i\rangle_{A'}\) is the maximally entangled state.
+
 classical_capacity: |
   The classical capacity of the qudit depolarizing channel is \[\log d+ (1-q+\frac{q}{d})\log(1-q+\frac{q}{d}) + (d-1)\frac{q}{d} \log(\frac{q}{d}).\]
 
