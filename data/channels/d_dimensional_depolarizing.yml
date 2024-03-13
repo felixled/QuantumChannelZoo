@@ -13,3 +13,9 @@ wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'
 
 classical_capacity: |
   The classical capacity of the qudit depolarizing channel is \[\log d+ (1-q+\frac{q}{d})\log(1-q+\frac{q}{d}) + (d-1)\frac{q}{d} \log(\frac{q}{d}).\]
+
+
+
+relations:
+  parents:
+    - channel_id: lie-algebra

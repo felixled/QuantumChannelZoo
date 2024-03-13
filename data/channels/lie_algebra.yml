@@ -1,0 +1,16 @@
+channel_id: lie-algebra
+
+name: 'Lie algebra channel'
+
+biography: |
+  Let \(\mathfrak{g}\) be a semisimple Lie algebra of dimension \(k\) with basis \(\{X_i\}_{i=1}^{k}\). Let \((\alpha, \mathcal{H})\) be an irreducible representation of \(\mathfrak{g}\). A Lie algebra channel \cite{doi:10.1063/1.1945768} is then given by 
+  \[\mathcal{E}(\rho) = (1-p) \rho + \frac{p}{Z} \sum_{i=1}^{k}\alpha(X_i) \: \rho \: \alpha(X_i),\] where \(Z\) is a normalization constant.
+
+  For the defining representation of \(\mathfrak{g} = \mathfrak{su}(d)\), this definition gives the \ref{channel:high_dim_depolar} channel.
+
+kraus_operators: |
+  \begin{align*}
+  K_0 &= (1-p) \mathbf{1} \\
+  K_i &= \sqrt{\frac{p}{Z}} \alpha(X_i) \qquad \text{ for } i = 1, ..., k.
+  \end{align*}
+
