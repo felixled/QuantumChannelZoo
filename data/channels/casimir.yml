@@ -1,0 +1,15 @@
+channel_id: casimir
+
+name: 'Casimir channel'
+
+biography: |
+  Let \(\mathfrak{g}\) be a semisimple Lie algebra of dimension \(k\) with basis \(\{X_i\}_{i=1}^{k}\). Let \((\alpha, \mathcal{H})\) be an irreducible representation of \(\mathfrak{g}\) of dimension \(d\). A Casimir channel \cite{doi:10.1080/09500340308234541} is then given by 
+  \[\mathcal{E}(\rho) =  \frac{1}{Z} \sum_{i=1}^{k}\alpha(X_i) \: \rho \: \alpha(X_i),\] where \(Z\) is a normalization constant.
+
+dimensions: |
+  \((d,d,k)\)
+kraus_operators: |
+  \begin{align*}
+  K_i &= \sqrt{\frac{1}{Z}} \alpha(X_i) \qquad \text{ for } i = 1, ..., k.
+  \end{align*}
+
