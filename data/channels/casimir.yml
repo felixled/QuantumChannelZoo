@@ -13,3 +13,6 @@ kraus_operators: |
   K_i &= \sqrt{\frac{1}{Z}} \alpha(X_i) \qquad \text{ for } i = 1, ..., k.
   \end{align*}
 
+relations:
+  parents:
+    - channel_id: lie-algebra
