@@ -1,0 +1,17 @@
+
+channel_id: transpose-depolarizing
+
+name: 'Transpose Depolarizing Channel'
+
+biography: |
+  A transpose depolarizing channel\cite{
+  doi:10.48550/arXiv.quant-ph/0410195} is defined by \(N(\rho) = t \rho^{T} + (1-t)\mathrm{tr}(\rho) \frac{1}{d} \mathbf{1}\), where \(\frac{-1}{d-1} \leq t \leq \frac{1}{d+1}\). 
+
+  For \(t = \frac{-1}{d-1}\), this gives the \hyperref[channel:werner-holevo]{Werner-Holevo channel}.
+
+
+choi_state: |
+  \[\tau_{AB} = (1-t) \frac{1}{d} \mathbf{I} + t \mathbf{F}_{AB}\]
+  where \(\mathbf{F}_{AB} = \sum_{ij} \ket{i}_A\ket{j}_B\bra{j}_A\bra{i}_B\) is the swap operator.
+
+
