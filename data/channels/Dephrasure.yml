@@ -35,3 +35,6 @@ choi_state: |
     0 & 0 & 0 & 0 & 0 & q
   \end{pmatrix}
   \]
+
+structural_properties: |
+ \(\mathcal{N}_{p,q}\) is degradable only if \(q=0\) or if \(p=0\) and \(q\leq \frac{1}{2}.\) For \(q \geq \frac12\), the channel is anti-degradable. \(\mathcal{N}_{p,q}\) is also anti-degradable in the region \[\{(p,q) : p \in [0,1/2], q \geq \frac{1-2p}{2(1-p)}\}.\]
