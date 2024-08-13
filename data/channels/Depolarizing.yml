@@ -42,6 +42,10 @@ wiki_link: 'https://en.wikipedia.org/wiki/Quantum_depolarizing_channel'
 classical_capacity: |
   The classical capacity of the depolarizing channel is \(1+ (1-\frac{q}{2})\log(1-\frac{q}{2}) + \frac{q}{2} \log(\frac{q}{2}) \).
 
+structural_properties: |
+  \( \mathcal{D}_q\) is anti-degradable for \(p \geq \frac{1}{4}\).
+
+
 relations:
   parents:
     - channel_id: high_dim_depolar

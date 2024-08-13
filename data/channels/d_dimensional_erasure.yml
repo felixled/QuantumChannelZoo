@@ -29,6 +29,7 @@ quantum_capacity: |
 classical_capacity: |
   The classical capacity of the qudit erasure channel is given by \((1-\epsilon) \log d \).
 
-
+structural_properties: |
+  \( \mathcal{E}_{\epsilon} \) is degradable for \(\epsilon \in [0,\frac{1}{2}]\) and anti-degradable for \(\epsilon \in [\frac{1}{2},1]\).
 
 

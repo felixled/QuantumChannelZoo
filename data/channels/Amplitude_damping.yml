@@ -33,6 +33,11 @@ choi_state: |
 
 wiki_link: 'https://en.wikipedia.org/wiki/Amplitude_damping_channel'
 
+structural_properties: |
+  The channel \(A_{\gamma}\) is degradable for \(\gamma \in [0,\frac{1}{2}]\) and anti-degradable for \(\gamma \in [\frac{1}{2},1]\).
+
+
+
 relations:
   parents:
     - channel_id: generalized_amplitude

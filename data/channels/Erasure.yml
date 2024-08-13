@@ -42,6 +42,9 @@ quantum_capacity: |
 classical_capacity: |
   The classical capacity of the erasure channel is \(1-\epsilon \).
 
+structural_properties: |
+  \( \mathcal{E}_{\epsilon} \) is degradable for \(\epsilon \in [0,\frac{1}{2}]\) and anti-degradable for \(\epsilon \in [\frac{1}{2},1]\).
+
 
 relations:
   parents:

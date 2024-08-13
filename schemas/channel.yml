@@ -103,6 +103,12 @@ properties:
     _description: >-
       Describe what is known about the classical capacity for the channel.
 
+  structural_properties:
+    type: string
+    _flm: full
+    _description: >-
+      Describe what is known about ``structural" properties of the channel: degradability/anti-degradability, for what parameters is it PPT etc.
+
   #
   # Relations:
   #

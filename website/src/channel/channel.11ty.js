@@ -118,6 +118,19 @@ if (channel.dimensions != null) {
               <div>${rdrblock(channel.classical_capacity)}</div>`;
         }
 
+    if (channel.structural_properties != null) {
+      s += sqzhtml`<hr>
+      <h2>Structural properties</h2>`;
+        }
+    
+        // add structural properties
+        if (channel.structural_properties != null) {
+          s += sqzhtml`
+            <div>${rdrblock(channel.structural_properties)}</div>`;
+        }
+        
+
+
     const relations = channel.relations ?? {};
 
     if (relations.spouse != null) {
