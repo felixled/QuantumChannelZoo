@@ -16,6 +16,26 @@ WildeQIT:
     flm: >-
       Wilde, Mark M. Quantum Information Theory (2nd ed.). Cambridge: Cambridge University Press, 2017 (\href{https://www.cambridge.org/core/books/quantum-information-theory/247A740E156416531AA8CB97DFDAE438}{DOI}). \href{https://arxiv.org/abs/1106.1445}{arXiv:1106.1445}.
 
+BB84:
+  _ready_formatted:
+    flm: >-
+      C. H. Bennett and G. Brassard, “Quantum cryptography: Public key distribution and coin
+      tossing,” in International Conference on Computers, Systems & Signal Processing, Bangalore,
+      India, Dec 9-12, 1984, pp. 175–179.
+
+SS08AddExt:
+  _ready_formatted:
+    flm: >-
+      G. Smith and J. A. Smolin, "Additive extensions of a quantum channel," 2008 IEEE Information Theory Workshop, Porto, Portugal, 2008, pp. 368-372, doi: 10.1109/ITW.2008.4578688.
+
+XW21:
+  _ready_formatted:
+    flm: >-
+      X. Wang, "Pursuing the Fundamental Limits for Quantum Communication," in IEEE Transactions on Information Theory, vol. 67, no. 7, pp. 4524-4532, July 2021, doi: 10.1109/TIT.2021.3068818.
+
+
+
+
 
 NielsenChuang:
   _ready_formatted:

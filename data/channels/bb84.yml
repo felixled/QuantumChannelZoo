@@ -1,0 +1,22 @@
+channel_id: bb84
+
+name: "BB84 channel"
+
+biography: |
+  The BB84 channel describes the famous quantum key distribution protocol by Bennett and Brassard \cite{preset:BB84}. It is defined by \[\rho \mapsto (1-p_X-p_Z+p_Xp_Z) \rho + (p_X-p_Xp_Z) X \rho X + p_Xp_Z Y \rho Y + (p_Z-p_Xp_Z) Z \rho Z.\] A well-known\cite{preset:SS08AddExt,preset:XW21} special case is when \(p_X = p_Z = p\), when the channel is given by \[\rho \mapsto (1-p)^2 \rho + (p-p^2) X \rho X + p^2 Y \rho Y + (p-p^2) Z \rho Z.\]
+
+dimensions: |
+  \( (2,2,4), \) when \(p_X = p_Z = p\) and \(0<p<1.\)
+
+kraus_operators: |
+  \begin{align*}
+    K_0 &= \sqrt{1-p_X-p_Z+p_Xp_Z}I = \sqrt{1-p_X-p_Z+p_Xp_Z} \begin{pmatrix}  1 & 0 \\ 0 & 1\end{pmatrix} \\
+    K_1 &= \sqrt{p_X-p_Xp_Z}X = \sqrt{p_X-p_Xp_Z} \begin{pmatrix}  0 & 1 \\ 1 & 0\end{pmatrix} \\
+    K_2 &= \sqrt{p_Xp_Z}Y = \sqrt{p_Xp_Z} \begin{pmatrix}  0 & -i \\ i & 0\end{pmatrix} \\
+    K_3 &= \sqrt{p_Z-p_Xp_Z}Z = \sqrt{p_Z-p_Xp_Z} \begin{pmatrix}  1 & 0 \\ 0 & -1\end{pmatrix}
+  \end{align*}
+
+
+relations:
+  parents:
+    - channel_id: pauli
