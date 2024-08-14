@@ -33,7 +33,12 @@ XW21:
     flm: >-
       X. Wang, "Pursuing the Fundamental Limits for Quantum Communication," in IEEE Transactions on Information Theory, vol. 67, no. 7, pp. 4524-4532, July 2021, doi: 10.1109/TIT.2021.3068818.
 
-
+FBW08:
+  _ready_formatted:
+    flm: >-
+      Jesse Fern and K Birgitta Whaley, “Lower bounds on the
+      nonzero capacity of Pauli channels,” Physical Review A
+      78, 062335 (2008).
 
 
 
