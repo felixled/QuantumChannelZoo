@@ -5,7 +5,7 @@ name: 'Generalized Dephasing Channel'
 
 biography: |
   A generalized dephasing channel leaves a fixed orthonormal basis invariant and dephases the off-diagonal elements of a density matrix
-  with respect to this basis.
+  with respect to this basis.~\cite{preset:WildeQIT}
   
   To define it, let \(\{\ket{i}_A\}_{i=1}^d\) be an orthonormal basis for the input/output space \(\mathbb{C}^d\), and let \(\{\ket{\varphi_i}_E\}_{i=1}^d\) be some set of not necessarily orthogonal states on \(\mathcal{H}_E\) with \(d_E=\dim\mathcal{H}_E \geq 2\). The generalized dephasing channel is defined by 
   \begin{align*}
